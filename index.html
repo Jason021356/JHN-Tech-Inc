@@ -29,6 +29,13 @@
         .four {
             left: 600px;
         }
+
+        #mainmenu>div {
+            position: relative;
+            width: 20px;
+            height: 3px;
+            background-color: white;
+        }
     </style>
 </head>
 
@@ -40,14 +47,15 @@
         }*/
     </script>
     <div id="navbar">
-        <div id="Products">
-            <h2 onclick="location.href=''"></h2>
-        </div>
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc'">JHN Tech Inc.<sup>™</sup></h1>
+        <div id="Products" style="background-color: white;height: 35xpx;left: 0;">
+            <h2 style="background-color: rgba(0, 0, 0, 0.0);position: relative;left: 20px;" onclick="location.href=''">
+                Tech Chat</h2>
+        </div>
         <button id="mainmenu" style="position:absolute;width: 35px;height: 50px;border-width: 0;top: 10px;right: 20px;">
-            <div style="position: relative;top: 0px;width: 20px;height: 3px;background-color: white;"></div>
-            <div style="position: relative;top: 5px;width: 20px;height: 3px;background-color: white;"></div>
-            <div style="position: relative;top: 10px;width: 20px;height: 3px;background-color: white;"></div>
+            <div style="top: 0px;"></div>
+            <div style="top: 5px;"></div>
+            <div style="top: 10px;"></div>
         </button>
         <h4 class="tag one">Products</h4>
         <h4 class="tag two">Solutions</h4>
