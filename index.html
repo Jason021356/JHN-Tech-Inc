@@ -38,6 +38,11 @@
             background-color: white;
             transition-duration: 0.4s;
         }
+
+        #Products,
+        #techchattag {
+            transition-duration: 0.3s;
+        }
     </style>
 </head>
 
@@ -45,7 +50,7 @@
     <div id="navbar">
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc'">JHN Tech Inc.<sup>™</sup></h1>
         <div id="Products" style="background-color: white;height: 0;left: 0;border-width: 0;">
-            <h2 style="background-color: rgba(0, 0, 0, 0.0);position: relative;left: 20px;height: 0;"
+            <h2 id="techchattag" style="position: relative;left: 20px;height: 0;visibility: hidden;"
                 onclick="location.href=''">
                 Tech Chat</h2>
         </div>
@@ -61,9 +66,15 @@
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
         <script>
-            prdpg = document.getElementById("")
+            prdpg = document.getElementById("Products");
+            tctg = document.getElementById("techchattag");
             document.getElementById("onetag").addEventListener("mouseover", function () {
-                prdpg.style = "height:200px;";
+                tctg.style = "position: relative;left: 20px;height: 0;visibility: unset;background-color:white;";
+                prdpg.style = "height:200px;background-color: white;visibility: unset;";
+            })
+            document.getElementById("onetag").addEventListener("mouseout", function () {
+                tctg.style = "position: relative;left: 20px;height: 0;visibility: hidden;color:rgba(0,0,0,0.0);background-color:white;";
+                prdpg.style = "height:0;visibility: hidden;";
             })
         </script>
     </div>
