@@ -49,7 +49,7 @@
 <body>
     <div id="navbar">
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc'">JHN Tech Inc.<sup>™</sup></h1>
-        <div id="Products" style="background-color: white;height: 0;left: 0;border-width: 0;">
+        <div id="Products" style="background-color: white;position: absolute;height: 0;left: 0;border-width: 0;">
             <h2 id="techchattag" style="position: relative;left: 20px;height: 0;visibility: hidden;"
                 onclick="location.href=''">
                 Tech Chat</h2>
@@ -70,20 +70,20 @@
             tctg = document.getElementById("techchattag");
             otg = document.getElementById("onetag");
             otg.addEventListener("mouseover", function () {
-                tctg.style = "position: relative;left: 20px;height: 0;visibility: unset;background-color:white;";
-                prdpg.style = "height:200px;background-color: white;visibility: unset;";
+                tctg.style = "position: relative;left: 50px;height: 0;visibility: unset;background-color:white;";
+                prdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;";
             })
             otg.addEventListener("mouseout", function () {
                 tctg.style = "position: relative;left: 20px;height: 0;visibility: hidden;color:rgba(0,0,0,0.0);background-color:white;";
-                prdpg.style = "height:0;visibility: hidden;";
+                prdpg.style = "position: absolute;left:0;height:0;visibility: hidden;width: 0;";
             })
             prdpg.addEventListener("mouseover", function () {
-                tctg.style = "position: relative;left: 20px;height: 0;visibility: unset;background-color:white;";
-                prdpg.style = "height:200px;background-color: white;visibility: unset;";
+                tctg.style = "position: relative;left: 50px;height: 0;visibility: unset;background-color:white;";
+                prdpg.style = "position: absolute;left:0;height:200px;width:100%;background-color: white;visibility: unset;";
             })
             prdpg.addEventListener("mouseout", function () {
                 tctg.style = "position: relative;left: 20px;height: 0;visibility: hidden;color:rgba(0,0,0,0.0);background-color:white;";
-                prdpg.style = "height:0;visibility: hidden;";
+                prdpg.style = "position: absolute;left:0;height:0;visibility: hidden;width: 0;";
             })
         </script>
     </div>
