@@ -68,11 +68,20 @@
         <script>
             prdpg = document.getElementById("Products");
             tctg = document.getElementById("techchattag");
-            document.getElementById("onetag").addEventListener("mouseover", function () {
+            otg = document.getElementById("onetag");
+            otg.addEventListener("mouseover", function () {
                 tctg.style = "position: relative;left: 20px;height: 0;visibility: unset;background-color:white;";
                 prdpg.style = "height:200px;background-color: white;visibility: unset;";
             })
-            document.getElementById("onetag").addEventListener("mouseout", function () {
+            otg.addEventListener("mouseout", function () {
+                tctg.style = "position: relative;left: 20px;height: 0;visibility: hidden;color:rgba(0,0,0,0.0);background-color:white;";
+                prdpg.style = "height:0;visibility: hidden;";
+            })
+            prdpg.addEventListener("mouseover", function () {
+                tctg.style = "position: relative;left: 20px;height: 0;visibility: unset;background-color:white;";
+                prdpg.style = "height:200px;background-color: white;visibility: unset;";
+            })
+            prdpg.addEventListener("mouseout", function () {
                 tctg.style = "position: relative;left: 20px;height: 0;visibility: hidden;color:rgba(0,0,0,0.0);background-color:white;";
                 prdpg.style = "height:0;visibility: hidden;";
             })
