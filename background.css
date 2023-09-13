@@ -1,7 +1,13 @@
-@charset  "UTF-8";
-*{
+@charset "UTF-8";
+
+* {
     background-color: black;
 }
-h1{
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
     color: white;
 }
