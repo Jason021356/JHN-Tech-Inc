@@ -41,22 +41,47 @@
 
         #Products {
             transition-duration: 0.7s;
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            height: 0;
+            left: 0;
+            border-width: 0;
+            visibility: hidden;
         }
 
         #techchattag {
             transition: 0.3s;
             left: 20px;
+            position: relative;
+            height: 0;
+            visibility: hidden;
+            color: rgba(0, 0, 0, 0.0);
+            background-color: white;
         }
 
         #casetag {
             position: absolute;
             left: 20px;
+            color: rgba(0, 0, 0, 0.0);
             background-color: rgba(0, 0, 0, 0.0);
             transition-duration: 0.3s;
+            visibility: hidden;
         }
 
         #tcico {
             transition-duration: 0.3s;
+        }
+
+        #TCIco {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            visibility: hidden;
+            top: 5px;
+            border-radius: 10px;
+            color: rgba(0, 0, 0, 0.0);
         }
     </style>
 </head>
@@ -64,14 +89,12 @@
 <body>
     <div id="navbar">
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc'">JHN Tech Inc.<sup>™</sup></h1>
-        <div id="Products" style="background-color: white;position: absolute;height: 0;left: 0;border-width: 0;"
-            onmouseover="mouseoverfn()" onmouseout="mouseoutfn()">
+        <div id="Products" onmouseover="mouseoverfn()" onmouseout="mouseoutfn()">
             <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
-                alt="Tech Chat Icon"
-                style="width: 50px;height: 50px;position: absolute;top: 5px;border-radius: 10px;left: 0;visibility: hidden;">
-            <h2 id="techchattag" style="position: relative;height: 0;visibility: hidden;" onclick="location.href=''">
+                alt="Tech Chat Icon">
+            <h2 id="techchattag" onclick="location.href=''">
                 Tech Chat</h2>
-            <h2 id="casetag" style="visibility: hidden;" onclick="location.href=''">
+            <h2 id="casetag" onclick="location.href=''">
                 接案找我們</h2>
         </div>
         <button id="mainmenu" style="position:absolute;width: 35px;height: 50px;border-width: 0;top: 10px;right: 20px;">
@@ -90,15 +113,15 @@
             tcico = document.getElementById("TCIco");
             function mouseoverfn() {
                 prdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;";
-                tcico.style = "width: 50px;height: 50px;position: absolute;top: 5px;border-radius: 10px;left:30px;visibility:unset;"
-                tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;background-color:white;";
-                cstg.style = "visibility:unset;left:100px;";
+                tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
+                cstg.style = "visibility:unset;left:100px;color:black";
+                tcico.style = "width: 50px;height: 50px;position: absolute;top: 5px;border-radius: 10px;left:40px;visibility:unset;"
             }
             function mouseoutfn() {
-                cstg.style = "visibility:hidden;color:rgba(0,0,0,0.0);";
-                tcico.style = "width: 50px;height: 50px;position: absolute;top: 5px;border-radius: 10px;color:rgba(0,0,0,0.0);"
-                tctg.style = "position: relative;left: 20px;height: 0;visibility: hidden;color:rgba(0,0,0,0.0);background-color:white;visibility:hidden;";
-                prdpg.style = "position: absolute;left:0;height:0;visibility: hidden;width: 0;";
+                cstg.style = "";
+                tcico.style = ""
+                tctg.style = "";
+                prdpg.style = "";
             }
         </script>
     </div>
