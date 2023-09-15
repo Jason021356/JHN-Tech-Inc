@@ -20,7 +20,7 @@
         }
 
         .two {
-            left: 400px;
+            left: 415px;
         }
 
         .three {
@@ -40,7 +40,6 @@
         }
 
         #Products {
-            transition-duration: 0.5s;
             background-color: white;
             position: absolute;
             width: 100%;
@@ -99,7 +98,7 @@
             <div style="top: 5px;"></div>
             <div style="top: 10px;"></div>
         </button>
-        <h4 class="tag one" onmouseover="msovfn()">Products</h4>
+        <h4 class="tag one" onmouseover="msovfn()" onmouseout="mslvotfn()">Applications</h4>
         <h4 class="tag two">Solutions</h4>
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
@@ -109,7 +108,7 @@
             cstg = document.getElementById("casetag");
             tcico = document.getElementById("TCIco");
             function msovfn() {
-                prdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;";
+                prdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.5s;";
                 tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
                 tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
                 setTimeout(() => cstg.style = "visibility:unset;left:100px;color:black", 100);
@@ -118,7 +117,7 @@
                 cstg.style = "";
                 tctg.style = "";
                 tcico.style = "";
-                prdpg.style = "";
+                prdpg.style = "transition-duration: 0.7s;";
             }
         </script>
     </div>
