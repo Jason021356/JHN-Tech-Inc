@@ -70,13 +70,13 @@
         }
 
         #TCIco {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             position: absolute;
-            left: 0;
+            left: 5px;
             visibility: hidden;
-            top: 5px;
-            border-radius: 10px;
+            top: 15px;
+            border-radius: 5px;
             opacity: 0.0;
             transition-duration: 0.3s;
         }
@@ -86,7 +86,7 @@
 <body>
     <div id="navbar">
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc'">JHN Tech Inc.<sup>™</sup></h1>
-        <div id="Products" onmouseout="mouseoutfn()">
+        <div id="Products" onmouseleave="mslvotfn()" onmouseover="msovfn()">
             <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
                 alt="Tech Chat Icon">
             <h2 id="techchattag">
@@ -99,7 +99,7 @@
             <div style="top: 5px;"></div>
             <div style="top: 10px;"></div>
         </button>
-        <h4 class="tag one" onmouseover="mouseoverfn()">Products</h4>
+        <h4 class="tag one" onmouseover="msovfn()">Products</h4>
         <h4 class="tag two">Solutions</h4>
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
@@ -108,19 +108,18 @@
             tctg = document.getElementById("techchattag");
             cstg = document.getElementById("casetag");
             tcico = document.getElementById("TCIco");
-            function mouseoverfn() {
+            function msovfn() {
                 prdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;";
                 tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
-                tcico.style = "width: 50px;height: 50px;position: absolute;top: 5px;border-radius: 10px;left:40px;visibility:unset;opacity: 1.0;";
-                cstg.style = "visibility:unset;left:100px;color:black";
+                tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
+                setTimeout(() => cstg.style = "visibility:unset;left:100px;color:black", 100);
             }
-            function mouseoutfn() {
+            function mslvotfn() {
                 cstg.style = "";
                 tctg.style = "";
                 tcico.style = "";
                 prdpg.style = "";
             }
-
         </script>
     </div>
 </body>
