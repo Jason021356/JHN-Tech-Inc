@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JHN Tech Inc.</title>
     <style>
-        body {
-            background-color: blue;
-        }
+        @import url(./background.css);
 
         .tag {
             position: absolute;
@@ -49,6 +47,7 @@
             left: 0;
             border-width: 0;
             visibility: hidden;
+            transition-duration: 0.5s;
         }
 
         #techchattag {
@@ -113,13 +112,13 @@
                 prdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.5s;";
                 tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
                 tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
-                setTimeout(() => cstg.style = "visibility:unset;left:100px;color:black", 100);
+                cstg.style = "visibility:unset;left:100px;color:black"
             }
             function mslvotfn() {
                 cstg.style = "";
                 tctg.style = "";
                 tcico.style = "";
-                prdpg.style = "transition-duration: 0.7s;";
+                setTimeout(() => prdpg.style = "", 300);
             }
         </script>
     </div>
