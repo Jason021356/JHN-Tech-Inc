@@ -39,7 +39,7 @@
             transition-duration: 0.4s;
         }
 
-        #Applications,
+        #allprd,
         #JFGPage {
             background-color: white;
             position: absolute;
@@ -92,7 +92,7 @@
 <body>
     <div id="navbar">
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc'">JHN Tech Inc.<sup>™</sup></h1>
-        <div id="Applications" onmouseleave="apppglvfn()" onmouseover="apppgovfn()">
+        <div id="allprd" onmouseleave="allprdpglvfn()" onmouseover="allprdpgovfn()">
             <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
                 alt="Tech Chat Icon">
             <h2 id="techchattag">
@@ -107,36 +107,30 @@
             <div style="top: 5px;"></div>
             <div style="top: 10px;"></div>
         </button>
-        <h4 class="tag one" onmouseover="apppgovfn()" onmouseout="apppglvfn()">Applications</h4>
+        <h4 class="tag one" onmouseover="allprdpgovfn()" onmouseout="allprdpglvfn()">Applications</h4>
         <h4 class="tag two" onmouseover="jfgpgov()" onmouseout="jfgpglv()">JFG</h4>
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
         <script>
-            apppg = document.getElementById("Applications");
+            allprdpg = document.getElementById("allprd");
             tctg = document.getElementById("techchattag");
             cstg = document.getElementById("gtracingtag");
             tcico = document.getElementById("TCIco");
             jfgpg = document.getElementById("JFGPage");
-            pgunsetstyle = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
-            pghidestyle = "transition-duration: 0.5s;"
-            function apppgovfn() {
-                apppg.style = pgunsetstyle;
+            function allprdpgovfn() {
+                allprdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
                 tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
                 tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
                 cstg.style = "visibility:unset;left:100px;color:black";
             }
-            function apppglvfn() {
+            function allprdpglvfn() {
                 cstg.style = "transition-duration: 0.2s;";
                 tctg.style = "transition-duration: 0.2s;";
                 tcico.style = "transition-duration: 0.2s;";
-                apppg.style = pghidestyle;
+                allprdpg.style = "transition-duration: 0.5s;";
             }
-            function jfgpgov() {
-                apppglvfn();
-                jfgpg.style = pgunsetstyle;
-            }
-            function jfgpglv() {
-                jfgpg.style = pghidestyle;
+            function apppgovfn(){
+                
             }
         </script>
     </div>
