@@ -7,6 +7,7 @@
     <title>JHN Tech Inc.</title>
     <style>
         @import url(./background.css);
+
         .tag {
             position: absolute;
             color: white;
@@ -19,7 +20,7 @@
         }
 
         .two {
-            left: 415px;
+            left: 435px;
         }
 
         .three {
@@ -38,7 +39,8 @@
             transition-duration: 0.4s;
         }
 
-        #Applications {
+        #Applications,
+        #JFGPage {
             background-color: white;
             position: absolute;
             width: 100%;
@@ -78,18 +80,19 @@
             opacity: 0.0;
             transition-duration: 0.2s;
         }
+
         @media screen and (max-width: 819px) {
-            .tag{
+            .tag {
                 visibility: hidden;
             }
-        }    
+        }
     </style>
 </head>
 
 <body>
     <div id="navbar">
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc'">JHN Tech Inc.<sup>™</sup></h1>
-        <div id="Applications" onmouseleave="mslvotfn()" onmouseover="msovfn()">
+        <div id="Applications" onmouseleave="apppglvfn()" onmouseover="apppgovfn()">
             <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
                 alt="Tech Chat Icon">
             <h2 id="techchattag">
@@ -97,13 +100,15 @@
             <h2 id="gtracingtag">
                 GT Racing</h2>
         </div>
+        <div id="JFGPage">
+        </div>
         <button id="mainmenu" style="position:absolute;width: 35px;height: 50px;border-width: 0;top: 10px;right: 20px;">
             <div style="top: 0px;"></div>
             <div style="top: 5px;"></div>
             <div style="top: 10px;"></div>
         </button>
-        <h4 class="tag one" onmouseover="msovfn()" onmouseout="mslvotfn()">Applications</h4>
-        <h4 class="tag two">Solutions</h4>
+        <h4 class="tag one" onmouseover="apppgovfn()" onmouseout="apppglvfn()">Applications</h4>
+        <h4 class="tag two">JFG</h4>
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
         <script>
@@ -111,13 +116,13 @@
             tctg = document.getElementById("techchattag");
             cstg = document.getElementById("gtracingtag");
             tcico = document.getElementById("TCIco");
-            function msovfn() {
+            function apppgovfn() {
                 apppg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
                 tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
                 tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
                 cstg.style = "visibility:unset;left:100px;color:black";
             }
-            function mslvotfn() {
+            function apppglvfn() {
                 cstg.style = "transition-duration: 0.2s;";
                 tctg.style = "transition-duration: 0.2s;";
                 tcico.style = "transition-duration: 0.2s;";
