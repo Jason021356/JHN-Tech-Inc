@@ -39,7 +39,7 @@
             transition-duration: 0.4s;
         }
 
-        #allprd,
+        #applications,
         #JFGPage {
             background-color: white;
             position: absolute;
@@ -92,7 +92,7 @@
 <body>
     <div id="navbar">
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc'">JHN Tech Inc.<sup>™</sup></h1>
-        <div id="allprd" onmouseleave="apppglvfn()" onmouseover="apppgovfn()">
+        <div id="applications" onmouseleave="apppglvfn()" onmouseover="apppgovfn()">
             <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
                 alt="Tech Chat Icon">
             <h2 id="techchattag">
@@ -100,7 +100,7 @@
             <h2 id="gtracingtag">
                 GT Racing</h2>
         </div>
-        <div id="JFGPage" onmouseover="jfgpgov()" onmouseout="jfgpglv()">
+        <div id="JFGPage" onmouseover="jfgpgovfnfn()" onmouseleave="jfgpgotfn()">
         </div>
         <button id="mainmenu" style="position:absolute;width: 35px;height: 50px;border-width: 0;top: 10px;right: 20px;">
             <div style="top: 0px;"></div>
@@ -108,38 +108,41 @@
             <div style="top: 10px;"></div>
         </button>
         <h4 class="tag one" onmouseover="apppgovfn()" onmouseout="apppglvfn()">Applications</h4>
-        <h4 class="tag two" onmouseover="jfgpgov()" onmouseout="jfgpglv()">JFG</h4>
+        <h4 class="tag two" onmouseover="jfgpgovfn()" onmouseout="jfgpgotfn()">JFG</h4>
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
         <script>
-            allprdpg = document.getElementById("allprd");
+            function sleep1s() {
+                setTimeout(sleep1s, 1000);
+            }
+            apppg = document.getElementById("applications");
             tctg = document.getElementById("techchattag");
             cstg = document.getElementById("gtracingtag");
             tcico = document.getElementById("TCIco");
             jfgpg = document.getElementById("JFGPage");
-            function allprdpgovfn() {
-                allprdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
-            }
-            function allprdpglvfn() {
-                allprdpg.style = "transition-duration: 0.5s;";
-            }
+            alldivovsty = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
+            alldivotsty = "transition-duration: 0.5s;";
             function apppgovfn() {
-                allprdpgovfn();
+                jfgpgotfn();
+                apppg.style = alldivovsty;
                 tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
                 tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
                 cstg.style = "visibility:unset;left:100px;color:black";
             }
             function apppglvfn() {
-                allprdpglvfn();
+                sleep1s();
+                apppg.style = alldivotsty;
                 cstg.style = "transition-duration: 0.2s;";
                 tctg.style = "transition-duration: 0.2s;";
                 tcico.style = "transition-duration: 0.2s;";
             }
-            function jfgpgov() {
-                allprdpgovfn();
+            function jfgpgovfn() {
+                apppglvfn();
+                jfgpg.style = alldivovsty;
             }
-            function jfgpglv() {
-                allprdpgovfn();
+            function jfgpgotfn() {
+                sleep1s();
+                jfgpg.style = alldivotsty;
             }
         </script>
     </div>
