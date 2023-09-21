@@ -39,8 +39,7 @@
             transition-duration: 0.4s;
         }
 
-        #applications,
-        #JFGPage {
+        #allprddiv {
             background-color: white;
             position: absolute;
             width: 100%;
@@ -60,13 +59,18 @@
             background-color: white;
         }
 
-        #gtracingtag {
+        #gtracingtag,
+        #wpm {
             position: absolute;
             left: 20px;
             color: rgba(0, 0, 0, 0.0);
             background-color: rgba(0, 0, 0, 0.0);
             transition-duration: 0.2s;
             visibility: hidden;
+        }
+
+        #wpm {
+            top: 80px;
         }
 
         #TCIco {
@@ -92,15 +96,14 @@
 <body>
     <div id="navbar">
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc'">JHN Tech Inc.<sup>™</sup></h1>
-        <div id="applications" onmouseleave="apppglvfn()" onmouseover="apppgovfn()">
+        <div id="allprddiv" onmouseover="alldivovstyle()" onmouseout="alldivlvstyle()">
             <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
                 alt="Tech Chat Icon">
             <h2 id="techchattag">
                 Tech Chat</h2>
             <h2 id="gtracingtag">
                 GT Racing</h2>
-        </div>
-        <div id="JFGPage" onmouseover="jfgpgovfn()" onmouseleave="jfgpgotfn()">
+            <h2 id="wpm">WiFi Password Manager</h2>
         </div>
         <button id="mainmenu" style="position:absolute;width: 35px;height: 50px;border-width: 0;top: 10px;right: 20px;">
             <div style="top: 0px;"></div>
@@ -108,36 +111,56 @@
             <div style="top: 10px;"></div>
         </button>
         <h4 class="tag one" onmouseover="apppgovfn()" onmouseout="apppglvfn()">Applications</h4>
-        <h4 class="tag two" onmouseover="jfgpgovfn()" onmouseout="jfgpgotfn()">JFG</h4>
+        <h4 class="tag two">JFG</h4>
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
         <script>
-            apppg = document.getElementById("applications");
+            prdpg = document.getElementById("allprddiv");
             tctg = document.getElementById("techchattag");
-            cstg = document.getElementById("gtracingtag");
+            gtrtg = document.getElementById("gtracingtag");
             tcico = document.getElementById("TCIco");
-            jfgpg = document.getElementById("JFGPage");
-            alldivovsty = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
-            alldivotsty = "transition-duration: 0.5s;";
+            wpmtg = document.getElementById("wpm");
+            apppgcnt = 0;
+            function alldivovstyle() {
+                prdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
+                switch (apppgcnt) {
+                    case 1:
+                        tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
+                        tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
+                        gtrtg.style = "visibility:unset;left:100px;color:black";
+                        wpmtg.style = "visibility:unset;left:100px;color:black";
+                }
+            }
+            function alldivlvstyle() {
+                switch (apppgcnt) {
+                    case 1:
+                        gtrtg.style = "transition-duration: 0.2s;";
+                        tctg.style = "transition-duration: 0.2s;";
+                        tcico.style = "transition-duration: 0.2s;";
+                        wpmtg.style = "transition-duration: 0.2s;";
+                }
+                prdpg.style = "transition-duration: 0.6s;";
+            }
             function apppgovfn() {
-                jfgpgotfn();
-                apppg.style = alldivovsty;
+                alldivovstyle();
                 tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
                 tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
-                cstg.style = "visibility:unset;left:100px;color:black";
+                gtrtg.style = "visibility:unset;left:100px;color:black";
+                wpmtg.style = "visibility:unset;left:100px;color:black";
+                apppgcnt = 1;
             }
             function apppglvfn() {
-                apppg.style = alldivotsty;
-                cstg.style = "transition-duration: 0.2s;";
+                gtrtg.style = "transition-duration: 0.2s;";
                 tctg.style = "transition-duration: 0.2s;";
                 tcico.style = "transition-duration: 0.2s;";
+                wpmtg.style = "transition-duration: 0.2s;";
+                alldivlvstyle();
             }
             function jfgpgovfn() {
-                apppglvfn();
-                jfgpg.style = alldivovsty;
+                //jfgpg.style = ;
             }
             function jfgpgotfn() {
-                jfgpg.style = alldivotsty;
+                //jfgpg.style = ;
             }
         </script>
     </div>
