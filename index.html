@@ -60,7 +60,7 @@
         }
 
         #gtracingtag,
-        #wpm {
+        #os {
             position: absolute;
             left: 20px;
             color: rgba(0, 0, 0, 0.0);
@@ -69,7 +69,7 @@
             visibility: hidden;
         }
 
-        #wpm {
+        #os {
             top: 80px;
         }
 
@@ -83,6 +83,10 @@
             border-radius: 5px;
             opacity: 0.0;
             transition-duration: 0.2s;
+        }
+
+        #allprddiv>h2 {
+            background-color: white;
         }
 
         @media screen and (max-width: 819px) {
@@ -103,7 +107,10 @@
                 Tech Chat</h2>
             <h2 id="gtracingtag">
                 GT Racing</h2>
-            <h2 id="wpm">WiFi Password Manager</h2>
+            <h2 id="os">作業系統(及將推出)</h2>
+            <h2 id="">影片剪輯</h2>
+            <h2 id="">防毒軟體</h2>
+            <h2 id="aibot">AI bot</h2>
         </div>
         <button id="mainmenu" style="position:absolute;width: 35px;height: 50px;border-width: 0;top: 10px;right: 20px;">
             <div style="top: 0px;"></div>
@@ -120,7 +127,7 @@
             tctg = document.getElementById("techchattag");
             gtrtg = document.getElementById("gtracingtag");
             tcico = document.getElementById("TCIco");
-            wpmtg = document.getElementById("wpm");
+            ostg = document.getElementById("os");
             apppgcnt = 0;
             function alldivovstyle() {
                 prdpg.style = "position: absolute;left:0;width:100%;height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
@@ -129,7 +136,7 @@
                         tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
                         tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
                         gtrtg.style = "visibility:unset;left:100px;color:black";
-                        wpmtg.style = "visibility:unset;left:100px;color:black";
+                        ostg.style = "visibility:unset;left:100px;color:black";
                 }
             }
             function alldivlvstyle() {
@@ -138,7 +145,7 @@
                         gtrtg.style = "transition-duration: 0.2s;";
                         tctg.style = "transition-duration: 0.2s;";
                         tcico.style = "transition-duration: 0.2s;";
-                        wpmtg.style = "transition-duration: 0.2s;";
+                        ostg.style = "transition-duration: 0.2s;";
                 }
                 prdpg.style = "transition-duration: 0.6s;";
             }
@@ -147,14 +154,14 @@
                 tctg.style = "position: relative;left: 100px;height: 0;visibility: unset;color:black;";
                 tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
                 gtrtg.style = "visibility:unset;left:100px;color:black";
-                wpmtg.style = "visibility:unset;left:100px;color:black";
+                ostg.style = "visibility:unset;left:100px;color:black";
                 apppgcnt = 1;
             }
             function apppglvfn() {
                 gtrtg.style = "transition-duration: 0.2s;";
                 tctg.style = "transition-duration: 0.2s;";
                 tcico.style = "transition-duration: 0.2s;";
-                wpmtg.style = "transition-duration: 0.2s;";
+                ostg.style = "transition-duration: 0.2s;";
                 alldivlvstyle();
             }
             function jfgpgovfn() {
