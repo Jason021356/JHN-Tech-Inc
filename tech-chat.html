@@ -99,8 +99,8 @@
         }
 
         #bigTCIco {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             position: absolute;
             top: 200px;
             opacity: 0.0;
@@ -114,6 +114,14 @@
 
         #allprddiv>h2 {
             background-color: rgba(0, 0, 0, 0.0);
+        }
+
+        #Desktop {
+            top: 50px;
+        }
+
+        #Screen {
+            top: 100px;
         }
 
         @media screen and (max-width: 819px) {
@@ -148,7 +156,7 @@
             <!--JFG-->
             <h2 id="laptop">筆記型電腦</h2>
             <h2 id="Desktop">桌上型電腦</h2>
-            <h2 id="Screen">螢幕</h2>
+            <h2 id="Screen">電腦螢幕</h2>
             <!--<h2 id="">主機板</h2>
             <h2 id="">輸入裝置</h2>
             <h2 id=""></h2>-->
@@ -167,7 +175,7 @@
         <h4 class="tag four">About JHN Tech</h4>
         <script>
             window.onload = function () {
-                document.getElementById("bigTCIco").style = "opacity: 1.0;width: 300px;height: 300px;position: absolute;top: 80px;"
+                document.getElementById("bigTCIco").style = "opacity: 1.0;width: 200px;height: 200px;position: absolute;top: 80px;"
             }
             //產品頁面 Animation
             prdpg = document.getElementById("allprddiv");
@@ -178,11 +186,13 @@
             ans = document.getElementById("Antivirussoftware");
             aibot = document.getElementById("aibot");
             NB = document.getElementById("laptop");
+            desktop = document.getElementById("Desktop");
+            sc = document.getElementById("Screen");
             apppgcnt = 0;
             function alldivovstyle() {
                 switch (apppgcnt) {
                     case 1:
-                        prdpg.style = "height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
+                        prdpg.style = "height:160px;background-color: white;visibility: unset;transition-duration: 0.2s;";
                         tctg.style = "position: relative;left: 100px;visibility: unset;color:black;";
                         tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
                         gtrtg.style = "visibility:unset;left:100px;color:black;";
@@ -193,6 +203,8 @@
                     case 2:
                         prdpg.style = "height:300px;background-color: white;visibility: unset;transition-duration: 0.2s;";
                         NB.style = "left: 6%;visibility: unset;color:black;";
+                        desktop.style = "left:6%;visibility:unset;color:black";
+                        sc.style = "left:6%;visibility:unset;color:black";
                         break;
                 }
             }
@@ -208,6 +220,8 @@
                         break;
                     case 2:
                         NB.style = "transition-duration: 0.2s;";
+                        desktop.style = "transition-duration:0.2s;";
+                        sc.style = "transition-duration:0.2s;";
                         break;
                 }
                 prdpg.style = "transition-duration: 0.8s;";
