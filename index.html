@@ -168,50 +168,38 @@
             aibot = document.getElementById("aibot");
             NB = document.getElementById("laptop");
             apppgcnt = 0;
-            prd = true;
             function alldivovstyle() {
                 switch (apppgcnt) {
                     case 1:
-                        if (prd == true) {
-                            prdpg.style = "height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
-                            tctg.style = "position: relative;left: 100px;visibility: unset;color:black;";
-                            tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
-                            gtrtg.style = "visibility:unset;left:100px;color:black;";
-                            vdc.style = "visibility:unset;left:100px;top:80px;color:black;";
-                            ans.style = "position: absolute;left: 380px;color: black;visibility: unset;";
-                            aibot.style = "position: absolute;left: 380px;color: black;visibility: unset;";
-                            prd = false;
-                        }
+                        prdpg.style = "height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
+                        tctg.style = "position: relative;left: 100px;visibility: unset;color:black;";
+                        tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
+                        gtrtg.style = "visibility:unset;left:100px;color:black;";
+                        vdc.style = "visibility:unset;left:100px;top:80px;color:black;";
+                        ans.style = "position: absolute;left: 380px;color: black;visibility: unset;";
+                        aibot.style = "position: absolute;left: 380px;color: black;visibility: unset;";
                         break;
                     case 2:
-                        if (prd == true) {
-                            prdpg.style = "height:300px;background-color: white;visibility: unset;transition-duration: 0.2s;";
-                            NB.style = "left: 6%;visibility: unset;color:black;";
-                            prd = false;
-                        }
+                        prdpg.style = "height:300px;background-color: white;visibility: unset;transition-duration: 0.2s;";
+                        NB.style = "left: 6%;visibility: unset;color:black;";
                         break;
                 }
             }
             function alldivlvstyle() {
                 switch (apppgcnt) {
                     case 1:
-                        if (prd == true) {
-                            gtrtg.style = "transition-duration: 0.2s;";
-                            tctg.style = "transition-duration: 0.2s;";
-                            tcico.style = "transition-duration: 0.2s;";
-                            vdc.style = "transition-duration: 0.2s;";
-                            ans.style = "transition-duration:0.2s;";
-                            aibot.style = "transition-duration:0.2s;";
-                        }
+                        gtrtg.style = "transition-duration: 0.2s;";
+                        tctg.style = "transition-duration: 0.2s;";
+                        tcico.style = "transition-duration: 0.2s;";
+                        vdc.style = "transition-duration: 0.2s;";
+                        ans.style = "transition-duration:0.2s;";
+                        aibot.style = "transition-duration:0.2s;";
                         break;
                     case 2:
-                        if (prd == true) {
-                            NB.style = "transition-duration: 0.2s;";
-                        }
+                        NB.style = "transition-duration: 0.2s;";
                         break;
                 }
                 prdpg.style = "transition-duration: 0.8s;";
-                prd = true
             }
             function apppgovfn() {
                 apppgcnt = 1;
