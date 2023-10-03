@@ -124,6 +124,14 @@
             top: 100px;
         }
 
+        #techchattg {
+            transition-duration: 0.5s;
+            left: 300px;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.0);
+            top: 100px;
+        }
+
         @media screen and (max-width: 819px) {
             .tag {
                 visibility: hidden;
@@ -143,6 +151,9 @@
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc/index.html'">JHN Tech Inc.<sup>™</sup>
         </h1>
         <img src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png" alt="" id="bigTCIco">
+        <h1 id="techchattg" style="left: 300px;position: absolute;color: rgba(0, 0, 0, 0.0);top: 100px;">劃時代的聊天軟體
+            <sup>。</sup><br>Tech Chat
+        </h1>
         <div id="allprddiv" onmouseover="alldivovstyle()" onmouseout="alldivlvstyle()">
             <!--Applications-->
             <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
@@ -176,12 +187,10 @@
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
     </div>
-    <h1 id="techchattg" style="left: 300px;position: absolute;color: rgba(0, 0, 0, 0.0);">劃時代的聊天軟體 <sup>。</sup><br>Tech
-        Chat</h1>
     <script>
         window.onload = function () {
             document.getElementById("bigTCIco").style = "opacity: 1.0;width: 200px;height: 200px;position: absolute;top: 80px;"
-            document.getElementById("techchattg").style = "left: 300px;position: absolute;color: white;"
+            document.getElementById("techchattg").style = "left: 300px;position: absolute;color: white;top: 90px;"
         }
         //產品頁面 Animation
         prdpg = document.getElementById("allprddiv");
