@@ -65,7 +65,8 @@
         #aibot,
         #laptop,
         #Desktop,
-        #Screen {
+        #Screen,
+        #inputdevice {
             position: absolute;
             left: 20px;
             color: rgba(0, 0, 0, 0.0);
@@ -124,6 +125,10 @@
             top: 100px;
         }
 
+        #inputdevice {
+            top: 150px;
+        }
+
         #techchattg {
             transition-duration: 0.5s;
             left: 300px;
@@ -170,8 +175,8 @@
             <h2 id="laptop">筆記型電腦</h2>
             <h2 id="Desktop">桌上型電腦</h2>
             <h2 id="Screen">電腦螢幕</h2>
+            <h2 id="inputdevice">輸入裝置</h2>
             <!--<h2 id="">主機板</h2>
-            <h2 id="">輸入裝置</h2>
             <h2 id=""></h2>-->
         </div>
         <!--手機用Navbar-->
@@ -203,6 +208,7 @@
         NB = document.getElementById("laptop");
         desktop = document.getElementById("Desktop");
         sc = document.getElementById("Screen");
+        indev = document.getElementById("inputdevice");
         apppgcnt = 0;
         tds = "transition-duration: 0.2s;";
         function alldivovstyle() {
@@ -221,6 +227,7 @@
                     NB.style = "left: 6%;visibility: unset;color:black;";
                     desktop.style = "left:6%;visibility:unset;color:black";
                     sc.style = "left:6%;visibility:unset;color:black";
+                    indev.style = "left:6%;visibility:unset;color:black";
                     break;
             }
         }
@@ -238,6 +245,7 @@
                     NB.style = tds;
                     desktop.style = tds;
                     sc.style = tds;
+                    indev.style = tds;
                     break;
             }
             prdpg.style = "transition-duration: 0.8s;";
