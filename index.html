@@ -65,7 +65,8 @@
         #aibot,
         #laptop,
         #Desktop,
-        #Screen {
+        #Screen,
+        #inputdevice {
             position: absolute;
             left: 20px;
             color: rgba(0, 0, 0, 0.0);
@@ -141,8 +142,8 @@
             <h2 id="laptop">筆記型電腦</h2>
             <h2 id="Desktop">桌上型電腦</h2>
             <h2 id="Screen">螢幕</h2>
+            <h2 id="inputdevice">輸入裝置</h2>
             <!--<h2 id="">主機板</h2>
-            <h2 id="">輸入裝置</h2>
             <h2 id=""></h2>-->
         </div>
         <!--手機用Navbar-->
@@ -158,8 +159,7 @@
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
     </div>
-    <script>
-        //產品頁面 Animation
+    <script>//產品頁面 Animation
         prdpg = document.getElementById("allprddiv");
         tctg = document.getElementById("techchattag");
         gtrtg = document.getElementById("gtracingtag");
@@ -168,12 +168,15 @@
         ans = document.getElementById("Antivirussoftware");
         aibot = document.getElementById("aibot");
         NB = document.getElementById("laptop");
+        desktop = document.getElementById("Desktop");
+        sc = document.getElementById("Screen");
+        indev = document.getElementById("inputdevice");
         apppgcnt = 0;
         tds = "transition-duration: 0.2s;";
         function alldivovstyle() {
             switch (apppgcnt) {
                 case 1:
-                    prdpg.style = "height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
+                    prdpg.style = "height:160px;background-color: white;visibility: unset;transition-duration: 0.2s;";
                     tctg.style = "position: relative;left: 100px;visibility: unset;color:black;";
                     tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
                     gtrtg.style = "visibility:unset;left:100px;color:black;";
@@ -184,6 +187,9 @@
                 case 2:
                     prdpg.style = "height:300px;background-color: white;visibility: unset;transition-duration: 0.2s;";
                     NB.style = "left: 6%;visibility: unset;color:black;";
+                    desktop.style = "left:6%;visibility:unset;color:black";
+                    sc.style = "left:6%;visibility:unset;color:black";
+                    indev.style = "left:6%;visibility:unset;color:black";
                     break;
             }
         }
@@ -199,6 +205,9 @@
                     break;
                 case 2:
                     NB.style = tds;
+                    desktop.style = tds;
+                    sc.style = tds;
+                    indev.style = tds;
                     break;
             }
             prdpg.style = "transition-duration: 0.8s;";
