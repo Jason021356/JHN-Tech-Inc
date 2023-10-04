@@ -168,6 +168,7 @@
             aibot = document.getElementById("aibot");
             NB = document.getElementById("laptop");
             apppgcnt = 0;
+            tds = "transition-duration: 0.2s;";
             function alldivovstyle() {
                 switch (apppgcnt) {
                     case 1:
@@ -188,15 +189,15 @@
             function alldivlvstyle() {
                 switch (apppgcnt) {
                     case 1:
-                        gtrtg.style = "transition-duration: 0.2s;";
-                        tctg.style = "transition-duration: 0.2s;";
-                        tcico.style = "transition-duration: 0.2s;";
-                        vdc.style = "transition-duration: 0.2s;";
-                        ans.style = "transition-duration:0.2s;";
-                        aibot.style = "transition-duration:0.2s;";
+                        gtrtg.style = tds;
+                        tctg.style = tds;
+                        tcico.style = tds;
+                        vdc.style = tds;
+                        ans.style = tds;
+                        aibot.style = tds;
                         break;
                     case 2:
-                        NB.style = "transition-duration: 0.2s;";
+                        NB.style = tds;
                         break;
                 }
                 prdpg.style = "transition-duration: 0.8s;";
