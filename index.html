@@ -157,67 +157,67 @@
         <h4 class="tag two" onmouseover="jfgpgovfn()" onmouseout="jfgpgotfn()">JFG</h4>
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
-        <script>
-            //產品頁面 Animation
-            prdpg = document.getElementById("allprddiv");
-            tctg = document.getElementById("techchattag");
-            gtrtg = document.getElementById("gtracingtag");
-            tcico = document.getElementById("TCIco");
-            vdc = document.getElementById("videoclipapp");
-            ans = document.getElementById("Antivirussoftware");
-            aibot = document.getElementById("aibot");
-            NB = document.getElementById("laptop");
-            apppgcnt = 0;
-            tds = "transition-duration: 0.2s;";
-            function alldivovstyle() {
-                switch (apppgcnt) {
-                    case 1:
-                        prdpg.style = "height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
-                        tctg.style = "position: relative;left: 100px;visibility: unset;color:black;";
-                        tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
-                        gtrtg.style = "visibility:unset;left:100px;color:black;";
-                        vdc.style = "visibility:unset;left:100px;top:80px;color:black;";
-                        ans.style = "position: absolute;left: 380px;color: black;visibility: unset;";
-                        aibot.style = "position: absolute;left: 380px;color: black;visibility: unset;";
-                        break;
-                    case 2:
-                        prdpg.style = "height:300px;background-color: white;visibility: unset;transition-duration: 0.2s;";
-                        NB.style = "left: 6%;visibility: unset;color:black;";
-                        break;
-                }
-            }
-            function alldivlvstyle() {
-                switch (apppgcnt) {
-                    case 1:
-                        gtrtg.style = tds;
-                        tctg.style = tds;
-                        tcico.style = tds;
-                        vdc.style = tds;
-                        ans.style = tds;
-                        aibot.style = tds;
-                        break;
-                    case 2:
-                        NB.style = tds;
-                        break;
-                }
-                prdpg.style = "transition-duration: 0.8s;";
-            }
-            function apppgovfn() {
-                apppgcnt = 1;
-                alldivovstyle();
-            }
-            function apppglvfn() {
-                alldivlvstyle();
-            }
-            function jfgpgovfn() {
-                apppgcnt = 2;
-                alldivovstyle();
-            }
-            function jfgpgotfn() {
-                alldivlvstyle();
-            }
-        </script>
     </div>
+    <script>
+        //產品頁面 Animation
+        prdpg = document.getElementById("allprddiv");
+        tctg = document.getElementById("techchattag");
+        gtrtg = document.getElementById("gtracingtag");
+        tcico = document.getElementById("TCIco");
+        vdc = document.getElementById("videoclipapp");
+        ans = document.getElementById("Antivirussoftware");
+        aibot = document.getElementById("aibot");
+        NB = document.getElementById("laptop");
+        apppgcnt = 0;
+        tds = "transition-duration: 0.2s;";
+        function alldivovstyle() {
+            switch (apppgcnt) {
+                case 1:
+                    prdpg.style = "height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
+                    tctg.style = "position: relative;left: 100px;visibility: unset;color:black;";
+                    tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
+                    gtrtg.style = "visibility:unset;left:100px;color:black;";
+                    vdc.style = "visibility:unset;left:100px;top:80px;color:black;";
+                    ans.style = "position: absolute;left: 380px;color: black;visibility: unset;";
+                    aibot.style = "position: absolute;left: 380px;color: black;visibility: unset;";
+                    break;
+                case 2:
+                    prdpg.style = "height:300px;background-color: white;visibility: unset;transition-duration: 0.2s;";
+                    NB.style = "left: 6%;visibility: unset;color:black;";
+                    break;
+            }
+        }
+        function alldivlvstyle() {
+            switch (apppgcnt) {
+                case 1:
+                    gtrtg.style = tds;
+                    tctg.style = tds;
+                    tcico.style = tds;
+                    vdc.style = tds;
+                    ans.style = tds;
+                    aibot.style = tds;
+                    break;
+                case 2:
+                    NB.style = tds;
+                    break;
+            }
+            prdpg.style = "transition-duration: 0.8s;";
+        }
+        function apppgovfn() {
+            apppgcnt = 1;
+            alldivovstyle();
+        }
+        function apppglvfn() {
+            alldivlvstyle();
+        }
+        function jfgpgovfn() {
+            apppgcnt = 2;
+            alldivovstyle();
+        }
+        function jfgpgotfn() {
+            alldivlvstyle();
+        }
+    </script>
 </body>
 
 </html>
