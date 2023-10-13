@@ -15,14 +15,6 @@
             top: 20px;
         }
 
-        .one {
-            border-width: 2px;
-        }
-
-        .two {
-            left: 435px;
-        }
-
         .three {
             left: 500px;
         }
@@ -154,11 +146,15 @@
             <div style="top: 10px;"></div>
         </button>
         <!--電腦用Navbar-->
-        <div style="width: 100.46px;height: 120px;position: absolute;left: 300px;top: 0;;">
-            <h4 class="tag one" onmouseover="apppgovfn()" onmouseout="apppglvfn()">
+        <div style="width: 100.46px;height: 120px;position: absolute;left: 300px;top: 0;" onmouseover="apppgovfn()"
+            onmouseout="apppglvfn()">
+            <h4 class="tag one">
                 Applications</h4>
         </div>
-        <h4 class="tag two" onmouseover="jfgpgovfn()" onmouseout="jfgpgotfn()">JFG</h4>
+        <div onmouseover="jfgpgovfn()" onmouseout="jfgpgotfn()"
+            style="width: 28.7px;height: 120px;position: absolute;left: 435px;top: 0;">
+            <h4 class="tag two">JFG</h4>
+        </div>
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
     </div>
@@ -199,7 +195,7 @@
         function alldivovstyle() {
             switch (apppgcnt) {
                 case 1:
-                    prdpg.style = "height:200px;background-color: white;visibility: unset;transition-duration: 0.2s;";
+                    prdpg.style = "height:160px;background-color: white;visibility: unset;transition-duration: 0.2s;";
                     tctg.style = "position: relative;left: 100px;visibility: unset;color:black;";
                     tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
                     gtrtg.style = "visibility:unset;left:100px;color:black;";
@@ -241,9 +237,7 @@
             alldivovstyle();
         }
         function apppglvfn() {
-            if (runbol == true) {
-                alldivlvstyle();
-            }
+            alldivlvstyle();
         }
         function jfgpgovfn() {
             apppgcnt = 2;
