@@ -120,6 +120,13 @@
             background-color: rgba(0, 0, 0, 0.0);
         }
 
+        #navbar {
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
         @media screen and (max-width: 819px) {
             .tag {
                 visibility: hidden;
@@ -135,7 +142,7 @@
 </head>
 
 <body>
-    <div id="navbar">
+    <div id="navbar" onmouseover="alldivovstyle()" onmouseout="alldivlvstyle()">
         <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc/index.html'">JHN Tech
             Inc.<sup>™</sup></h1>
         <!--手機用Navbar-->
@@ -182,6 +189,7 @@
         desktop = document.getElementById("Desktop");
         sc = document.getElementById("Screen");
         indev = document.getElementById("inputdevice");
+        apppgcnt = 0;
         tds = "transition-duration: 0.2s;";
         function alldivovstyle() {
             switch (apppgcnt) {
