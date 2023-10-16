@@ -190,19 +190,17 @@
         sc = document.getElementById("Screen");
         indev = document.getElementById("inputdevice");
         apppgcnt = 0;
-        runbol = false;
         tds = "transition-duration: 0.2s;";
         function alldivovstyle() {
             switch (apppgcnt) {
                 case 1:
                     prdpg.style = "height:160px;background-color: white;visibility: unset;transition-duration: 0.2s;";
                     setTimeout(() => tctg.style = "position: relative;left: 100px;visibility: unset;color:black;", 200);
-                    setTimeout(() => tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;", 200);
-                    gtrtg.style = "visibility:unset;left:100px;color:black;";
-                    vdc.style = "visibility:unset;left:100px;top:80px;color:black;";
-                    ans.style = "position: absolute;left: 380px;color: black;visibility: unset;";
-                    aibot.style = "position: absolute;left: 380px;color: black;visibility: unset;";
-                    setTimeout(() => runbol = true, 600);
+                    setTimeout(() => tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;", 300);
+                    setTimeout(() => gtrtg.style = "visibility:unset;left:100px;color:black;", 400);
+                    setTimeout(() => vdc.style = "visibility:unset;left:100px;top:80px;color:black;", 500);
+                    setTimeout(() => aibot.style = "position: absolute;left: 380px;color: black;visibility: unset;", 600);
+                    setTimeout(() => ans.style = "position: absolute;left: 380px;color: black;visibility: unset;", 700);
                     break;
                 case 2:
                     prdpg.style = "height:300px;background-color: white;visibility: unset;transition-duration: 0.2s;";
@@ -210,7 +208,6 @@
                     desktop.style = "left:6%;visibility:unset;color:black";
                     sc.style = "left:6%;visibility:unset;color:black";
                     indev.style = "left:6%;visibility:unset;color:black";
-                    setTimeout(() => runbol = true, 200);
                     break;
             }
         }
@@ -218,44 +215,34 @@
             switch (apppgcnt) {
                 case 1:
                     gtrtg.style = tds;
-                    setTimeout(() => tctg.style = tds, 200);
-                    setTimeout(() => tcico.style = tds, 200);
+                    tctg.style = tds;
+                    tcico.style = tds;
                     vdc.style = tds;
                     ans.style = tds;
                     aibot.style = tds;
-                    setTimeout(() => runbol = false, 600);
                     break;
                 case 2:
                     NB.style = tds;
                     desktop.style = tds;
                     sc.style = tds;
                     indev.style = tds;
-                    setTimeout(() => runbol = false, 600);
                     break;
             }
-            setTimeout(() => prdpg.style = "transition-duration: 0.8s;", 400);
+            prdpg.style = "transition-duration: 0.8s;";
         }
         function apppgovfn() {
-            if (runbol == false) {
-                apppgcnt = 1;
-                alldivovstyle();
-            }
+            apppgcnt = 1;
+            alldivovstyle();
         }
         function apppglvfn() {
-            if (runbol == true) {
-                alldivlvstyle();
-            }
+            alldivlvstyle();
         }
         function jfgpgovfn() {
-            if (runbol == false) {
-                apppgcnt = 2;
-                alldivovstyle();
-            }
+            apppgcnt = 2;
+            alldivovstyle();
         }
         function jfgpgotfn() {
-            if (runbol == true) {
-                alldivlvstyle();
-            }
+            alldivlvstyle();
         }
     </script>
 </body>
