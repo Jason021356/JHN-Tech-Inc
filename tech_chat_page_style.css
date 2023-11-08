@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.tag {
+    position: absolute;
+    color: white;
+    border: 0;
+    top: 20px;
+}
+
+.three {
+    left: 500px;
+}
+
+.four {
+    left: 600px;
+}
+
+#mainmenu>div {
+    position: relative;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+#allprddiv {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 100px;
+    border-width: 0;
+    visibility: hidden;
+}
+
+#techchattag {
+    left: 20px;
+    position: relative;
+    height: 0;
+    color: rgba(0, 0, 0, 0.0);
+    transition: 0.2s;
+    visibility: hidden;
+}
+
+#gtracingtag,
+#videoclipapp,
+#Antivirussoftware,
+#aibot,
+#laptop,
+#Desktop,
+#Screen,
+#inputdevice {
+    position: absolute;
+    left: 20px;
+    color: rgba(0, 0, 0, 0.0);
+    transition-duration: 0.2s;
+    visibility: hidden;
+}
+
+#Antivirussoftware,
+#aibot {
+    left: 300px;
+}
+
+#aibot {
+    top: 0;
+}
+
+#videoclipapp {
+    top: 80px;
+}
+
+#TCIco {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    visibility: hidden;
+    top: 15px;
+    border-radius: 5px;
+    opacity: 0.0;
+    transition-duration: 0.2s;
+}
+
+#laptop {
+    position: relative;
+    top: -20px;
+}
+
+#Desktop {
+    top: 50px;
+}
+
+#Screen {
+    top: 100px;
+}
+
+#inputdevice {
+    top: 150px;
+}
+
+#allprddiv>h2 {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+#navbar {
+    height: 50px;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 819px) {
+    .tag {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:819px) {
+    #mainmenu {
+        visibility: hidden;
+    }
+}
