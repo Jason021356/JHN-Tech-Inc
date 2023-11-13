@@ -9,6 +9,7 @@
         @import url(./background.css);
         @import url(./tech_chat_page_style.css);
     </style>
+    <script src="./pageanim.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <h1 id="techchattg" style="left: 300px;position: absolute;color: rgba(0, 0, 0, 0.0);top: 100px;">劃時代的聊天軟體
             <sup>。</sup><br>Tech Chat
         </h1>
-        <div id="allprddiv" onmouseover="alldivovstyle()" onmouseout="alldivlvstyle()">
+        <div id="allprddiv" onmouseenter="alldivovstyle()" onmouseout="alldivlvstyle()">
             <!--Applications-->
             <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
                 alt="Tech Chat Icon"
@@ -46,9 +47,9 @@
             <div style="top: 10px;"></div>
         </button>
         <!--電腦用Navbar-->
-        <h4 class="tag one" onmouseover="apppgovfn()" onmouseout="apppglvfn()">
+        <h4 class="tag one" onmouseenter="apppgovfn()" onmouseout="apppglvfn()">
             Applications</h4>
-        <h4 class="tag two" onmouseover="jfgpgovfn()" onmouseout="jfgpgotfn()">JFG</h4>
+        <h4 class="tag two" onmouseenter="jfgpgovfn()" onmouseout="jfgpgotfn()">JFG</h4>
         <h4 class="tag three">Feauture</h4>
         <h4 class="tag four">About JHN Tech</h4>
     </div>
@@ -56,73 +57,6 @@
         window.onload = function () {
             document.getElementById("bigTCIco").style = "opacity: 1.0;width: 200px;height: 200px;position: absolute;top: 80px;"
             document.getElementById("techchattg").style = "left: 300px;position: absolute;color: white;top: 90px;"
-        }
-        //產品頁面 Animation
-        prdpg = document.getElementById("allprddiv");
-        tctg = document.getElementById("techchattag");
-        gtrtg = document.getElementById("gtracingtag");
-        tcico = document.getElementById("TCIco");
-        vdc = document.getElementById("videoclipapp");
-        ans = document.getElementById("Antivirussoftware");
-        aibot = document.getElementById("aibot");
-        NB = document.getElementById("laptop");
-        desktop = document.getElementById("Desktop");
-        sc = document.getElementById("Screen");
-        indev = document.getElementById("inputdevice");
-        apppgcnt = 0;
-        tds = "transition-duration: 0.2s;";
-        function alldivovstyle() {
-            switch (apppgcnt) {
-                case 1:
-                    prdpg.style = "height:160px;background-color: white;visibility: unset;transition-duration: 0.2s;";
-                    tctg.style = "position: relative;left: 100px;visibility: unset;color:black;";
-                    tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;";
-                    gtrtg.style = "visibility:unset;left:100px;color:black;";
-                    vdc.style = "visibility:unset;left:100px;top:80px;color:black;";
-                    ans.style = "position: absolute;left: 380px;color: black;visibility: unset;";
-                    aibot.style = "position: absolute;left: 380px;color: black;visibility: unset;";
-                    break;
-                case 2:
-                    prdpg.style = "height:300px;background-color: white;visibility: unset;transition-duration: 0.2s;";
-                    NB.style = "left: 6%;visibility: unset;color:black;";
-                    desktop.style = "left:6%;visibility:unset;color:black";
-                    sc.style = "left:6%;visibility:unset;color:black";
-                    indev.style = "left:6%;visibility:unset;color:black";
-                    break;
-            }
-        }
-        function alldivlvstyle() {
-            switch (apppgcnt) {
-                case 1:
-                    gtrtg.style = tds;
-                    tctg.style = tds;
-                    tcico.style = tds;
-                    vdc.style = tds;
-                    ans.style = tds;
-                    aibot.style = tds;
-                    break;
-                case 2:
-                    NB.style = tds;
-                    desktop.style = tds;
-                    sc.style = tds;
-                    indev.style = tds;
-                    break;
-            }
-            prdpg.style = "transition-duration: 0.8s;";
-        }
-        function apppgovfn() {
-            apppgcnt = 1;
-            alldivovstyle();
-        }
-        function apppglvfn() {
-            alldivlvstyle();
-        }
-        function jfgpgovfn() {
-            apppgcnt = 2;
-            alldivovstyle();
-        }
-        function jfgpgotfn() {
-            alldivlvstyle();
         }
     </script>
 </body>
