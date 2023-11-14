@@ -11,6 +11,11 @@ sc = document.getElementById("Screen");
 indev = document.getElementById("inputdevice");
 apppgcnt = 0;
 tds = "transition-duration: 0.2s;";
+function clearTimeoutfn(...cto) {
+    cto.forEach(function cltiot(number) {
+        clearTimeout(number);
+    })
+}
 function alldivovstyle() {
     switch (apppgcnt) {
         case 1:
@@ -34,12 +39,7 @@ function alldivovstyle() {
 function alldivlvstyle() {
     switch (apppgcnt) {
         case 1:
-            clearTimeout(tctgtimeout);
-            clearTimeout(tcicotimeout);
-            clearTimeout(gtrtgtimeout);
-            clearTimeout(vdctimeout);
-            clearTimeout(aibottimeout);
-            clearTimeout(anstimeout);
+            clearTimeoutfn(tctgtimeout, tcicotimeout, gtrtgtimeout, vdctimeout, aibottimeout, anstimeout);
             gtrtg.style = tds;
             tctg.style = tds;
             tcico.style = tds;
@@ -48,10 +48,7 @@ function alldivlvstyle() {
             aibot.style = tds;
             break;
         case 2:
-            clearTimeout(NBtimeout);
-            clearTimeout(desktoptimeout);
-            clearTimeout(sctimeout);
-            clearTimeout(indevtimeout);
+            clearTimeoutfn(NBtimeout, desktoptimeout, sctimeout, indevtimeout);
             NB.style = tds;
             desktop.style = tds;
             sc.style = tds;
