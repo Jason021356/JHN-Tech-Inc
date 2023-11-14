@@ -1,4 +1,3 @@
-//產品頁面 Animation
 prdpg = document.getElementById("allprddiv");
 tctg = document.getElementById("techchattag");
 gtrtg = document.getElementById("gtracingtag");
