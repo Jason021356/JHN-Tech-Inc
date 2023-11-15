@@ -16,7 +16,7 @@ function clearTimeoutfn(...cto) {
         clearTimeout(number);
     })
 }
-function alldivovstyle() {
+function BSalldivovstyle() {
     switch (apppgcnt) {
         case 1:
             prdpg.style = "height:160px;background-color: white;visibility: unset;transition-duration: 0.2s;";
@@ -59,14 +59,14 @@ function alldivlvstyle() {
 }
 function apppgovfn() {
     apppgcnt = 1;
-    alldivovstyle();
+    BSalldivovstyle();
 }
 function apppglvfn() {
     alldivlvstyle();
 }
 function jfgpgovfn() {
     apppgcnt = 2;
-    alldivovstyle();
+    BSalldivovstyle();
 }
 function jfgpgotfn() {
     alldivlvstyle();
