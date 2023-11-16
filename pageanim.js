@@ -9,6 +9,7 @@ NB = document.getElementById("laptop");
 desktop = document.getElementById("Desktop");
 sc = document.getElementById("Screen");
 indev = document.getElementById("inputdevice");
+clpprdpg=document.getElementById("cellphoneNavBar");
 apppgcnt = 0;
 tds = "transition-duration: 0.2s;";
 function clearTimeoutfn(...cto) {
@@ -16,7 +17,7 @@ function clearTimeoutfn(...cto) {
         clearTimeout(number);
     })
 }
-function BSalldivovstyle() {
+function PCalldivovstyle() {
     switch (apppgcnt) {
         case 1:
             prdpg.style = "height:160px;background-color: white;visibility: unset;transition-duration: 0.2s;";
@@ -36,7 +37,7 @@ function BSalldivovstyle() {
             break;
     }
 }
-function alldivlvstyle() {
+function PCalldivlvstyle() {
     switch (apppgcnt) {
         case 1:
             clearTimeoutfn(tctgtimeout, tcicotimeout, gtrtgtimeout, vdctimeout, aibottimeout, anstimeout);
@@ -57,17 +58,20 @@ function alldivlvstyle() {
     }
     prdpg.style = "transition-duration: 0.8s;";
 }
+function Devicealldivovstyle(){
+    clpprdpg.style="visibility:unset;width:100%;left:0;background-color: rgb(37, 37, 37);"
+}
 function apppgovfn() {
     apppgcnt = 1;
-    BSalldivovstyle();
+    PCalldivovstyle();
 }
 function apppglvfn() {
-    alldivlvstyle();
+    PCalldivlvstyle();
 }
 function jfgpgovfn() {
     apppgcnt = 2;
-    BSalldivovstyle();
+    PCalldivovstyle();
 }
 function jfgpgotfn() {
-    alldivlvstyle();
+    PCalldivlvstyle();
 }

@@ -135,8 +135,39 @@
     top: 0;
     height: 100%;
     width: 0;
+    visibility: hidden;
+    transition-duration: 0.3s;
 }
-
+.cellphonetag{
+    position: absolute;
+    color: white;
+    border: 0;
+    transition-duration: 0.3s;
+}
+.cone{
+    position: absolute;
+    top: 8%;
+    left: 12%;
+    background-color: rgb(37, 37, 37);
+}
+.ctwo{
+    position: absolute;
+    top: 16%;
+    left: 12%;
+    background-color: rgb(37, 37, 37);
+}
+.cthree{
+    position: absolute;
+    top: 24%;
+    left: 12%;
+    background-color: rgb(37, 37, 37);
+}
+.cfour{
+    position: absolute;
+    top: 32%;
+    left: 12%;
+    background-color: rgb(37, 37, 37);
+}
 @media screen and (max-width: 819px) {
 
     .tag,
