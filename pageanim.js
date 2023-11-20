@@ -10,12 +10,18 @@ desktop = document.getElementById("Desktop");
 sc = document.getElementById("Screen");
 indev = document.getElementById("inputdevice");
 clpprdpg = document.getElementById("cellphoneNavBar");
+clpprdpg = document.querySelectorAll(".cellphonetag");
 apppgcnt = 0;
 tds = "transition-duration: 0.2s;";
 mobilebl = false;
 function clearTimeoutfn(...cto) {
-    cto.forEach(function cltiot(number) {
+    cto.forEach(function (number) {
         clearTimeout(number);
+    })
+}
+function defaultfn(...tag) {
+    tag.forEach(function (n2) {
+        n2.style = tds;
     })
 }
 function PCalldivovstyle() {
@@ -42,19 +48,11 @@ function PCalldivlvstyle() {
     switch (apppgcnt) {
         case 1:
             clearTimeoutfn(tctgtimeout, tcicotimeout, gtrtgtimeout, vdctimeout, aibottimeout, anstimeout);
-            gtrtg.style = tds;
-            tctg.style = tds;
-            tcico.style = tds;
-            vdc.style = tds;
-            ans.style = tds;
-            aibot.style = tds;
+            defaultfn(gtrtg, tctg, tcico, vdc, ans, aibot);
             break;
         case 2:
             clearTimeoutfn(NBtimeout, desktoptimeout, sctimeout, indevtimeout);
-            NB.style = tds;
-            desktop.style = tds;
-            sc.style = tds;
-            indev.style = tds;
+            defaultfn(NB, desktop, sc, sc);
             break;
     }
     prdpg.style = "transition-duration: 0.8s;";
@@ -62,8 +60,10 @@ function PCalldivlvstyle() {
 function Devicealldivanimstyle() {
     if (mobilebl == false) {
         clpprdpg.style = "visibility:unset;width:100%;left:0;background-color: rgb(37, 37, 37);";
+        mobilebl = true;
     } else {
         clpprdpg.style = "";
+        mobilebl = false;
     }
 }
 function apppgovfn() {

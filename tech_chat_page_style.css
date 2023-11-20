@@ -138,36 +138,31 @@
     visibility: hidden;
     transition-duration: 0.3s;
 }
-.cellphonetag{
+
+.cellphonetag {
     position: absolute;
-    color: white;
+    color: rgba(0, 0, 0, 0.0);
     border: 0;
     transition-duration: 0.3s;
+    visibility: hidden;
 }
-.cone{
-    position: absolute;
+
+.cone {
     top: 8%;
-    left: 12%;
-    background-color: rgb(37, 37, 37);
 }
-.ctwo{
-    position: absolute;
+
+.ctwo {
     top: 16%;
-    left: 12%;
-    background-color: rgb(37, 37, 37);
 }
-.cthree{
-    position: absolute;
+
+.cthree {
     top: 24%;
-    left: 12%;
-    background-color: rgb(37, 37, 37);
 }
-.cfour{
-    position: absolute;
+
+.cfour {
     top: 32%;
-    left: 12%;
-    background-color: rgb(37, 37, 37);
 }
+
 @media screen and (max-width: 819px) {
 
     .tag,
