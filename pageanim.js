@@ -9,9 +9,10 @@ NB = document.getElementById("laptop");
 desktop = document.getElementById("Desktop");
 sc = document.getElementById("Screen");
 indev = document.getElementById("inputdevice");
-clpprdpg=document.getElementById("cellphoneNavBar");
+clpprdpg = document.getElementById("cellphoneNavBar");
 apppgcnt = 0;
 tds = "transition-duration: 0.2s;";
+mobilebl = false;
 function clearTimeoutfn(...cto) {
     cto.forEach(function cltiot(number) {
         clearTimeout(number);
@@ -58,8 +59,12 @@ function PCalldivlvstyle() {
     }
     prdpg.style = "transition-duration: 0.8s;";
 }
-function Devicealldivovstyle(){
-    clpprdpg.style="visibility:unset;width:100%;left:0;background-color: rgb(37, 37, 37);"
+function Devicealldivanimstyle() {
+    if (mobilebl == false) {
+        clpprdpg.style = "visibility:unset;width:100%;left:0;background-color: rgb(37, 37, 37);";
+    } else {
+        clpprdpg.style = "";
+    }
 }
 function apppgovfn() {
     apppgcnt = 1;
