@@ -52,7 +52,7 @@ function PCalldivlvstyle() {
             break;
         case 2:
             clearTimeoutfn(NBtimeout, desktoptimeout, sctimeout, indevtimeout);
-            defaultfn(NB, desktop, sc, sc);
+            defaultfn(NB, desktop, sc, indev);
             break;
     }
     prdpg.style = "transition-duration: 0.8s;";
