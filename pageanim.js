@@ -66,8 +66,8 @@ function Devicealldivanimstyle() {
         clpprdpg.style = "visibility:unset;width:100%;background-color: rgb(37, 37, 37);";
         td1.style = "transform: rotate(45deg);";
         td2.style = "visibility:hidden;background-color:rgba(0,0,0,0.0);top:5px;";
-        td3.style = "transform: rotate(-45deg);top:-5px;";
-        mainmenubtn.style = "background-color:rgba(37,37,37);top: 10px;right: 20px;"
+        td3.style = "transform: rotate(-45deg);top:-6px;";
+        mainmenubtn.style = "background-color:rgba(37,37,37);"
         mobilebl = true;
     } else {
         clpprdpg.style = "";
