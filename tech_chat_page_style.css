@@ -24,6 +24,23 @@
     right: 20px;
 }
 
+#Search::placeholder {
+    color: dimgrey;
+    font-size: x-large;
+}
+
+#Search {
+    font-size: x-large;
+    color: white;
+    border: 3px dimgrey solid;
+    border-radius: 10px;
+    position: fixed;
+    top: 35px;
+    left: 750px;
+    height: 30px;
+    width: 400px;
+}
+
 #allprddiv {
     background-color: rgba(37, 37, 37);
     position: absolute;
