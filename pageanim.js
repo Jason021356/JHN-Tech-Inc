@@ -72,7 +72,7 @@ function Devicealldivanimstyle() {
         td2.style = "visibility:hidden;background-color:rgba(0,0,0,0.0);top:5px;";
         td3.style = "transform: rotate(-45deg);top:-6px;";
         mainmenubtn.style = "background-color:rgba(37,37,37);";
-        cone.style = "";
+        cone.style = "color:white;visibility:unset;left:60px;";
         mobilebl = true;
     } else {
         clpprdpg.style = "";

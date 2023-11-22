@@ -161,6 +161,7 @@
 .cellphonetag {
     position: absolute;
     color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(37, 37, 37);
     border: 0;
     transition-duration: 0.3s;
     visibility: hidden;
@@ -185,7 +186,8 @@
 @media screen and (max-width: 818px) {
 
     .tag,
-    .tagdiv {
+    .tagdiv,
+    #Search {
         visibility: hidden;
     }
 }
