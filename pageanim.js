@@ -14,7 +14,6 @@ clpprdtag = document.querySelectorAll(".cellphonetag");
 td1 = document.getElementById("td1");
 td2 = document.getElementById("td2");
 td3 = document.getElementById("td3");
-mainmenubtn = document.getElementById("mainmenu");
 cone = document.querySelector(".cone");
 ctwo = document.querySelector(".ctwo");
 cthree = document.querySelector(".cthree");
@@ -71,7 +70,6 @@ function Devicealldivanimstyle() {
         td1.style = "transform: rotate(45deg);";
         td2.style = "visibility:hidden;background-color:rgba(0,0,0,0.0);top:5px;";
         td3.style = "transform: rotate(-45deg);top:-6px;";
-        mainmenubtn.style = "background-color:rgba(37,37,37);";
         cone.style = "color:white;visibility:unset;left:60px;";
         mobilebl = true;
     } else {
@@ -79,22 +77,7 @@ function Devicealldivanimstyle() {
         td1.style = "";
         td2.style = "top: 5px;";
         td3.style = "top:10px";
-        mainmenubtn.style = "";
         cone.style = "";
         mobilebl = false;
     }
-}
-function apppgovfn() {
-    apppgcnt = 1;
-    PCalldivovstyle();
-}
-function apppglvfn() {
-    PCalldivlvstyle();
-}
-function jfgpgovfn() {
-    apppgcnt = 2;
-    PCalldivovstyle();
-}
-function jfgpgotfn() {
-    PCalldivlvstyle();
 }
