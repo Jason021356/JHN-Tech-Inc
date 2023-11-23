@@ -13,36 +13,34 @@
 </head>
 
 <body>
+    <img src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png" alt="" id="bigTCIco">
+    <h1 id="techchattg" style="left: 300px;position: absolute;color: rgba(0, 0, 0, 0.0);top: 100px;">劃時代的聊天軟體
+        <sup>。</sup><br>Tech Chat
+    </h1>
     <div id="navbar">
-        <h1 onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc/index.html'">JHN Tech Inc.<sup>™</sup>
-        </h1>
-        <img src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png" alt="" id="bigTCIco">
-        <h1 id="techchattg" style="left: 300px;position: absolute;color: rgba(0, 0, 0, 0.0);top: 100px;">劃時代的聊天軟體
-            <sup>。</sup><br>Tech Chat
-        </h1>
-        <!--手機用Navbar-->
-        <button id="mainmenu" style="position:absolute;width: 35px;height: 50px;border-width: 0;top: 10px;right: 20px;">
-            <div style="top: 0px;"></div>
-            <div style="top: 5px;"></div>
-            <div style="top: 10px;"></div>
-        </button>
-        <div id="cellphoneNavBar">
-
-        </div>
+        <h1 style="position: fixed;left: 20px;"
+            onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc/index.html'">JHN Tech
+            Inc.<sup>™</sup></h1>
         <!--電腦用Navbar-->
-        <div style="width: 100.46px;height: 120px;position: fixed;left: 300px;top: 0;" onmouseenter="apppgovfn()"
-            onmouseleave="apppglvfn()">
-            <h4 class="tag one">
-                Applications</h4>
+        <div class="tagdiv 1" style="width: 120px;position: absolute;left: 290.225px;top: 0;"
+            onmouseenter="apppgcnt = 1;PCalldivovstyle();" onmouseleave="PCalldivlvstyle()">
+            <h4 class="tag one" style="left: 9.77px;">Applications</h4>
         </div>
-        <div onmouseenter="jfgpgovfn()" onmouseleave="jfgpgotfn()"
-            style="width: 28.7px;height: 120px;position: absolute;left: 435px;top: 0;">
+        <div class="tagdiv 2" onmouseenter="apppgcnt = 2;PCalldivovstyle();" onmouseleave="PCalldivlvstyle()"
+            style="width: 28.7px;position: absolute;left: 435px;top: 0;">
             <h4 class="tag two">JFG</h4>
         </div>
-        <h4 class="tag three">Future</h4>
-        <h4 class="tag four">About JHN Tech</h4>
+        <div class="tagdiv 3" onmouseenter="" onmouseleave=""
+            style="width: 52.31px;position: absolute;left: 510px;top: 0;">
+            <h4 class="tag three">Future</h4>
+        </div>
+        <div class="tagdiv 4" onmouseenter="" onmouseleave=""
+            style="width: 130.3px;position: absolute;left: 590px;top: 0;">
+            <h4 class="tag four">About JHN Tech</h4>
+        </div>
+        <input id="Search" type="text" placeholder=" Search...">
     </div>
-    <div id="allprddiv" onmouseenter="BSalldivovstyle()" onmouseleave="alldivlvstyle()">
+    <div id="allprddiv" onmouseenter="PCalldivovstyle()" onmouseleave="PCalldivlvstyle()">
         <!--Applications-->
         <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
             alt="Tech Chat Icon" onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc/tech-chat.html'">
@@ -61,6 +59,18 @@
         <!--<h2 id="">主機板</h2>
         <h2 id=""></h2>-->
     </div>
+    <!--手機用Navbar-->
+    <div id="cellphoneNavBar">
+        <h2 class="cellphonetag cone">Applications</h2>
+        <h2 class="cellphonetag ctwo">JFG</h2>
+        <h2 class="cellphonetag cthree">Future</h2>
+        <h2 class="cellphonetag cfour">About JHN Tech</h2>
+    </div>
+    <button id="mainmenu" onclick="Devicealldivanimstyle()">
+        <div id="td1" style="top: 0px;"></div>
+        <div id="td2" style="top: 5px;"></div>
+        <div id="td3" style="top: 10px;"></div>
+    </button>
     <script>
         window.onload = function () {
             document.getElementById("bigTCIco").style = "opacity: 1.0;width: 200px;height: 200px;position: absolute;top: 80px;"
