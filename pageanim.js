@@ -66,18 +66,26 @@ function PCalldivlvstyle() {
 }
 function Devicealldivanimstyle() {
     if (mobilebl == false) {
-        clpprdpg.style = "visibility:unset;width:100%;background-color: rgb(37, 37, 37);";
+        if (mobilebl == true) { clearTimeout(clpprdpgto); }
+        clpprdpg.style = "visibility:unset;width:100%;background-color: rgb(37, 37, 37);"
         td1.style = "transform: rotate(45deg);";
         td2.style = "visibility:hidden;background-color:rgba(0,0,0,0.0);top:5px;";
         td3.style = "transform: rotate(-45deg);top:-6px;";
-        cone.style = "color:white;visibility:unset;left:60px;";
+        coneto = setTimeout(() => cone.style = "color:white;visibility:unset;left:60px;", 200);
+        ctwoto = setTimeout(() => ctwo.style = "color:white;visibility:unset;left:60px;", 300);
+        cthreeto = setTimeout(() => cthree.style = "color:white;visibility:unset;left:60px;", 400);
+        cfourto = setTimeout(() => cfour.style = "color:white;visibility:unset;left:60px;", 500);
         mobilebl = true;
     } else {
-        clpprdpg.style = "";
+        clearTimeoutfn(coneto, ctwoto, cthreeto, cfourto);
+        clpprdpgto = setTimeout(() => clpprdpg.style = "", 200);
         td1.style = "";
         td2.style = "top: 5px;";
         td3.style = "top:10px";
         cone.style = "";
+        ctwo.style = "";
+        cthree.style = "";
+        cfour.style = "";
         mobilebl = false;
     }
 }
