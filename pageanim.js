@@ -66,7 +66,7 @@ function PCalldivlvstyle() {
 }
 function Devicealldivanimstyle() {
     if (mobilebl == false) {
-        if (mobilebl == true) { clearTimeout(clpprdpgto); }
+        if (mobilebl == true) { clearTimeout(clpprdpgto); clearTimeout(mobblto) }
         clpprdpg.style = "visibility:unset;width:100%;background-color: rgb(37, 37, 37);"
         td1.style = "transform: rotate(45deg);";
         td2.style = "visibility:hidden;background-color:rgba(0,0,0,0.0);top:5px;";
@@ -86,6 +86,6 @@ function Devicealldivanimstyle() {
         ctwo.style = "";
         cthree.style = "";
         cfour.style = "";
-        mobilebl = false;
+        mobblto = setTimeout(() => mobilebl = false, 200);
     }
 }
