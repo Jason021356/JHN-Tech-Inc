@@ -19,7 +19,6 @@ ctwo = document.querySelector(".ctwo");
 cthree = document.querySelector(".cthree");
 cfour = document.querySelector(".cfour");
 apppgcnt = 0;
-tds = "transition-duration: 0.2s;";
 mobilebl = false;
 prdpgbl = false;
 function clearTimeoutfn(...cto) {
@@ -29,7 +28,7 @@ function clearTimeoutfn(...cto) {
 }
 function defaultfn(...tag) {
     tag.forEach(function (n2) {
-        n2.style = tds;
+        n2.style = "";
     })
 }
 function PCalldivovstyle() {
