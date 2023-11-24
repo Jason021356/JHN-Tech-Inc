@@ -21,6 +21,7 @@ cfour = document.querySelector(".cfour");
 apppgcnt = 0;
 tds = "transition-duration: 0.2s;";
 mobilebl = false;
+prdpgbl = false;
 function clearTimeoutfn(...cto) {
     cto.forEach(function (number) {
         clearTimeout(number);
