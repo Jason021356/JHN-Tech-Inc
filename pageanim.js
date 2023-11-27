@@ -21,16 +21,8 @@ cfour = document.querySelector(".cfour");
 apppgcnt = 0;
 mobilebl = false;
 prdpgbl = false;
-function clearTimeoutfn(...cto) {
-    cto.forEach(function (number) {
-        clearTimeout(number);
-    })
-}
-function defaultfn(...tag) {
-    tag.forEach(function (n2) {
-        n2.style = "";
-    })
-}
+function clearTimeoutfn(...cto) { cto.forEach(function (number) { clearTimeout(number) }) }
+function defaultfn(...tag) { tag.forEach(function (n2) { n2.style = "" }) }
 function PCalldivovstyle() {
     switch (apppgcnt) {
         case 1:
