@@ -48,6 +48,7 @@ function PCalldivlvstyle() {
         case 1:
             clearTimeoutfn(tctgtimeout, tcicotimeout, gtrtgtimeout, vdctimeout, aibottimeout, anstimeout);
             defaultfn(gtrtg, tctg, tcico, vdc, ans, aibot);
+            prdpgbl = false;
             break;
         case 2:
             clearTimeoutfn(NBtimeout, desktoptimeout, sctimeout, indevtimeout);
