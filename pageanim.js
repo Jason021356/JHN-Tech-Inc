@@ -71,13 +71,9 @@ function Devicealldivanimstyle() {
     } else {
         clearTimeoutfn(coneto, ctwoto, cthreeto, cfourto);
         clpprdpgto = setTimeout(() => clpprdpg.style = "", 200);
-        td1.style = "";
+        defaultfn(td1, cone, ctwo, cthree, cfour);
         td2.style = "top: 5px;";
         td3.style = "top:10px";
-        cone.style = "";
-        ctwo.style = "";
-        cthree.style = "";
-        cfour.style = "";
         mobblto = setTimeout(() => mobilebl = false, 200);
     }
 }
