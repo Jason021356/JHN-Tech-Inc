@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    -webkit-overflow-x: hidden;
 }
 
 h1 {
