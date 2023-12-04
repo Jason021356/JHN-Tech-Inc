@@ -160,7 +160,7 @@
 }
 
 .cellphonetag {
-    position: absolute;
+    position: relative;
     left: 0;
     color: rgba(0, 0, 0, 0.0);
     background-color: rgba(0, 0, 0, 0.0);
