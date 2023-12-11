@@ -63,10 +63,10 @@ function Devicealldivanimstyle() {
         td1.style = "transform: rotate(45deg);";
         td2.style = "visibility:hidden;background-color:rgba(0,0,0,0.0);top:5px;";
         td3.style = "transform: rotate(-45deg);top:-6px;";
-        coneto = setTimeout(() => cone.style = "color:white;visibility:unset;left:150px;", 200);
-        ctwoto = setTimeout(() => ctwo.style = "color:white;visibility:unset;left:150px;", 250);
-        cthreeto = setTimeout(() => cthree.style = "color:white;visibility:unset;left:150px;", 300);
-        cfourto = setTimeout(() => cfour.style = "color:white;visibility:unset;left:150px;", 350);
+        coneto = setTimeout(() => cone.style = "color:white;visibility:unset;left:20%;", 200);
+        ctwoto = setTimeout(() => ctwo.style = "color:white;visibility:unset;left:20%;", 250);
+        cthreeto = setTimeout(() => cthree.style = "color:white;visibility:unset;left:20%;", 300);
+        cfourto = setTimeout(() => cfour.style = "color:white;visibility:unset;left:20%;", 350);
         mobilebl = true;
     } else {
         clearTimeoutfn(coneto, ctwoto, cthreeto, cfourto);

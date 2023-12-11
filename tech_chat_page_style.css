@@ -150,7 +150,7 @@
 }
 
 #cellphoneNavBar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -160,7 +160,7 @@
 }
 
 .cellphonetag {
-    position: relative;
+    position: absolute;
     left: 0;
     color: rgba(0, 0, 0, 0.0);
     background-color: rgba(0, 0, 0, 0.0);
@@ -170,19 +170,19 @@
 }
 
 .cone {
-    top: 8%;
+    top: 10%;
 }
 
 .ctwo {
-    top: 16%;
+    top: 20%;
 }
 
 .cthree {
-    top: 24%;
+    top: 30%;
 }
 
 .cfour {
-    top: 32%;
+    top: 40%;
 }
 
 @media screen and (max-width: 818px) {
