@@ -18,40 +18,45 @@ cone = document.querySelector(".cone");
 ctwo = document.querySelector(".ctwo");
 cthree = document.querySelector(".cthree");
 cfour = document.querySelector(".cfour");
+shadow = document.getElementById("shadow");
 apppgcnt = 0;
 mobilebl = false;
 prdpgbl = false;
 function clearTimeoutfn(...cto) { cto.forEach(function (number) { clearTimeout(number) }) }
 function defaultfn(...tag) { tag.forEach(function (n2) { n2.style = "" }) }
 function PCalldivovstyle() {
-    switch (apppgcnt) {
-        case 1:
-            prdpg.style = "height:160px;visibility: unset;transition-duration: 0.2s;";
-            tctgtimeout = setTimeout(() => tctg.style = "position: relative;left: 100px;visibility: unset;color:white;", 200);
-            tcicotimeout = setTimeout(() => tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;", 300);
-            gtrtgtimeout = setTimeout(() => gtrtg.style = "visibility:unset;left:100px;color:white;", 300);
-            vdctimeout = setTimeout(() => vdc.style = "visibility:unset;left:100px;top:80px;color:white;", 400);
-            aibottimeout = setTimeout(() => aibot.style = "position: absolute;left: 380px;color:white;visibility: unset;", 500);
-            anstimeout = setTimeout(() => ans.style = "position: absolute;left: 380px;color:white;visibility: unset;", 600);
-            break;
-        case 2:
-            prdpg.style = "height:300px;visibility: unset;transition-duration: 0.2s;";
-            NBtimeout = setTimeout(() => NB.style = "left: 6%;visibility: unset;color:white;", 200);
-            desktoptimeout = setTimeout(() => desktop.style = "left:6%;visibility:unset;color:white;", 300);
-            sctimeout = setTimeout(() => sc.style = "left:6%;visibility:unset;color:white;", 400);
-            indevtimeout = setTimeout(() => indev.style = "left:6%;visibility:unset;color:white;", 500);
-            break;
+    if (prdpgbl == false) {
+        switch (apppgcnt) {
+            case 1:
+                prdpg.style = "height:160px;visibility: unset;transition-duration: 0.2s;";
+                tctgtimeout = setTimeout(() => tctg.style = "position: relative;left: 100px;visibility: unset;color:white;", 200);
+                tcicotimeout = setTimeout(() => tcico.style = "width: 40px;height: 40px;position: absolute;top: 15px;border-radius: 5px;left:50px;visibility:unset;opacity: 1.0;", 300);
+                gtrtgtimeout = setTimeout(() => gtrtg.style = "visibility:unset;left:100px;color:white;", 300);
+                vdctimeout = setTimeout(() => vdc.style = "visibility:unset;left:100px;top:80px;color:white;", 400);
+                aibottimeout = setTimeout(() => aibot.style = "position: absolute;left: 380px;color:white;visibility: unset;", 500);
+                anstimeout = setTimeout(() => ans.style = "position: absolute;left: 380px;color:white;visibility: unset;", 600);
+                shadow.style = "visibility:unset";
+                break;
+            case 2:
+                prdpg.style = "height:300px;visibility: unset;transition-duration: 0.2s;";
+                NBtimeout = setTimeout(() => NB.style = "left: 6%;visibility: unset;color:white;", 200);
+                desktoptimeout = setTimeout(() => desktop.style = "left:6%;visibility:unset;color:white;", 300);
+                sctimeout = setTimeout(() => sc.style = "left:6%;visibility:unset;color:white;", 400);
+                indevtimeout = setTimeout(() => indev.style = "left:6%;visibility:unset;color:white;", 500);
+                shadow.style = "visibility:unset";
+                break;
+        }
     }
 }
 function PCalldivlvstyle() {
     switch (apppgcnt) {
         case 1:
             clearTimeoutfn(tctgtimeout, tcicotimeout, gtrtgtimeout, vdctimeout, aibottimeout, anstimeout);
-            defaultfn(gtrtg, tctg, tcico, vdc, ans, aibot);
+            defaultfn(gtrtg, tctg, tcico, vdc, ans, aibot, shadow);
             break;
         case 2:
             clearTimeoutfn(NBtimeout, desktoptimeout, sctimeout, indevtimeout);
-            defaultfn(NB, desktop, sc, indev);
+            defaultfn(NB, desktop, sc, indev, shadow);
             break;
     }
     prdpg.style = "transition-duration: 0.8s;";

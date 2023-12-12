@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <div id="navbar">
+    <div id="shadow" onmouseover="prdpgbl=false;PCalldivlvstyle();"></div>
+    <div id="navbar" onmouseenter="prdpgbl=false;PCalldivlvstyle();">
         <h1 style="position: fixed;left: 20px;"
             onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc/index.html'">JHN Tech
             Inc.<sup>™</sup></h1>
@@ -22,7 +23,7 @@
             onmouseenter="apppgcnt = 1;PCalldivovstyle();prdpgbl=true;">
             <h4 class="tag one" style="left: 9.77px;">Applications</h4>
         </div>
-        <div class="tagdiv 2" onmouseenter="apppgcnt = 2;PCalldivovstyle();"
+        <div class="tagdiv 2" onmouseenter="apppgcnt = 2;PCalldivovstyle();prdpgbl=true;"
             style="width: 28.7px;position: absolute;left: 435px;top: 0;">
             <h4 class="tag two">JFG</h4>
         </div>
@@ -36,7 +37,7 @@
         </div>
         <input id="Search" type="text" placeholder=" Search...">
     </div>
-    <div id="allprddiv" onmouseenter="PCalldivovstyle()" onmouseleave="PCalldivlvstyle()">
+    <div id="allprddiv">
         <!--Applications-->
         <img id="TCIco" src="https://raw.githubusercontent.com/Jason021356/JHN-Tech-Inc/main/tech_chat.png"
             alt="Tech Chat Icon" onclick="location.href='https://jason021356.github.io/JHN-Tech-Inc/tech-chat.html'">

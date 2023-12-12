@@ -185,6 +185,16 @@
     top: 40%;
 }
 
+#shadow {
+    position: fixed;
+    visibility: hidden;
+    background-color: rgb(73, 73, 73);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
 @media screen and (max-width: 818px) {
 
     .tag,
