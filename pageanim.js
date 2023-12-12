@@ -49,15 +49,17 @@ function PCalldivovstyle() {
     }
 }
 function PCalldivlvstyle() {
-    switch (apppgcnt) {
-        case 1:
-            clearTimeoutfn(tctgtimeout, tcicotimeout, gtrtgtimeout, vdctimeout, aibottimeout, anstimeout);
-            defaultfn(gtrtg, tctg, tcico, vdc, ans, aibot, shadow);
-            break;
-        case 2:
-            clearTimeoutfn(NBtimeout, desktoptimeout, sctimeout, indevtimeout);
-            defaultfn(NB, desktop, sc, indev, shadow);
-            break;
+    if (prdpgbl == false) {
+        switch (apppgcnt) {
+            case 1:
+                clearTimeoutfn(tctgtimeout, tcicotimeout, gtrtgtimeout, vdctimeout, aibottimeout, anstimeout);
+                defaultfn(gtrtg, tctg, tcico, vdc, ans, aibot, shadow);
+                break;
+            case 2:
+                clearTimeoutfn(NBtimeout, desktoptimeout, sctimeout, indevtimeout);
+                defaultfn(NB, desktop, sc, indev, shadow);
+                break;
+        }
     }
     prdpg.style = "transition-duration: 0.8s;";
 }
