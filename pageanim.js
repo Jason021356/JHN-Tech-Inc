@@ -60,7 +60,6 @@ function PCalldivlvstyle() {
                 defaultfn(NB, desktop, sc, indev, shadow);
                 break;
         }
-        console.log("收回");
     }
     prdpg.style = "transition-duration: 0.8s;";
 }
