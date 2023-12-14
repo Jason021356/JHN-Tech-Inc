@@ -1,3 +1,4 @@
+body = document.querySelector("body");
 prdpg = document.getElementById("allprddiv");
 tctg = document.getElementById("techchattag");
 gtrtg = document.getElementById("gtracingtag");
@@ -22,6 +23,12 @@ shadow = document.getElementById("shadow");
 apppgcnt = 0;
 mobilebl = false;
 prdpgbl = false;
+body.addEventListener('keydown', function (e) {
+    if (e.key === "/") {
+        document.getElementById("Search").focus();
+        e.preventDefault();
+    }
+});
 function clearTimeoutfn(...cto) { cto.forEach(function (number) { clearTimeout(number) }) }
 function defaultfn(...tag) { tag.forEach(function (n2) { n2.style = "" }) }
 function PCalldivovstyle() {
