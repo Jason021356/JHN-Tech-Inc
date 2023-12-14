@@ -53,11 +53,13 @@ function PCalldivlvstyle() {
         switch (apppgcnt) {
             case 1:
                 clearTimeoutfn(tctgtimeout, tcicotimeout, gtrtgtimeout, vdctimeout, aibottimeout, anstimeout);
-                defaultfn(gtrtg, tctg, tcico, vdc, ans, aibot, shadow);
+                defaultfn(gtrtg, tctg, tcico, vdc, ans, aibot);
+                shadow.style = "transition-duration: 0.8s;";
                 break;
             case 2:
                 clearTimeoutfn(NBtimeout, desktoptimeout, sctimeout, indevtimeout);
-                defaultfn(NB, desktop, sc, indev, shadow);
+                defaultfn(NB, desktop, sc, indev);
+                shadow.style = "transition-duration: 0.8s;";
                 break;
         }
     }
