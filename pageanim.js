@@ -42,7 +42,6 @@ function PCalldivovstyle() {
                 vdctimeout = setTimeout(() => vdc.style = "visibility:unset;left:100px;top:80px;color:white;", 400);
                 aibottimeout = setTimeout(() => aibot.style = "position: absolute;left: 380px;color:white;visibility: unset;", 500);
                 anstimeout = setTimeout(() => ans.style = "position: absolute;left: 380px;color:white;visibility: unset;", 600);
-                shadow.style = "visibility:unset;background-color:rgba(73,73,73,0.7)";
                 break;
             case 2:
                 prdpg.style = "height:300px;visibility: unset;transition-duration: 0.2s;";
@@ -50,10 +49,10 @@ function PCalldivovstyle() {
                 desktoptimeout = setTimeout(() => desktop.style = "left:6%;visibility:unset;color:white;", 300);
                 sctimeout = setTimeout(() => sc.style = "left:6%;visibility:unset;color:white;", 400);
                 indevtimeout = setTimeout(() => indev.style = "left:6%;visibility:unset;color:white;", 500);
-                shadow.style = "visibility:unset;background-color:rgba(73,73,73,0.7)";
                 break;
         }
         prdpgbl = true;
+        shadow.style = "visibility:unset;background-color:rgba(73,73,73,0.7)";
     }
 }
 function PCalldivlvstyle() {
