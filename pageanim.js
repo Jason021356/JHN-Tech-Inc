@@ -53,6 +53,7 @@ function PCalldivovstyle() {
                 shadow.style = "visibility:unset;background-color:rgba(73,73,73,0.7)";
                 break;
         }
+        prdpgbl = true;
     }
 }
 function PCalldivlvstyle() {
