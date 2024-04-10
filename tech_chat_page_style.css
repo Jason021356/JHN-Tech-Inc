@@ -1,18 +1,18 @@
 @charset "UTF-8";
-.tag {
+.tag{
     position: absolute;
     color: white;
     border: 0;
     top: 20px;
 }
-#mainmenu>div {
+#mainmenu>div{
     position: relative;
     width: 20px;
     height: 3px;
     background-color: white;
     transition-duration: 0.2s;
 }
-#mainmenu {
+#mainmenu{
     position: fixed;
     width: 35px;
     height: 50px;
@@ -21,11 +21,11 @@
     right: 2.5%;
     background-color: rgba(0, 0, 0, 0.0);
 }
-#Search::placeholder {
+#Search::placeholder{
     color: dimgrey;
     font-size: x-large;
 }
-#Search {
+#Search{
     font-size: x-large;
     color: white;
     border: 3px dimgrey solid;
