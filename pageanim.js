@@ -19,6 +19,7 @@ cone = document.querySelector(".cone");
 ctwo = document.querySelector(".ctwo");
 cthree = document.querySelector(".cthree");
 cfour = document.querySelector(".cfour");
+searchbar = document.getElementById("Search");
 shadow = document.getElementById("shadow");
 apppgcnt = 0;
 mobilebl = false;
@@ -82,6 +83,7 @@ function Devicealldivanimstyle() {
         ctwoto = setTimeout(() => ctwo.style = "color:white;visibility:unset;left:20%;", 250);
         cthreeto = setTimeout(() => cthree.style = "color:white;visibility:unset;left:20%;", 300);
         cfourto = setTimeout(() => cfour.style = "color:white;visibility:unset;left:20%;", 350);
+        c
         mobilebl = true;
     } else {
         clearTimeoutfn(coneto, ctwoto, cthreeto, cfourto);
