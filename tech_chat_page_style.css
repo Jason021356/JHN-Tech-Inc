@@ -1,12 +1,10 @@
 @charset "UTF-8";
-
 .tag {
     position: absolute;
     color: white;
     border: 0;
     top: 20px;
 }
-
 #mainmenu>div {
     position: relative;
     width: 20px;
@@ -14,7 +12,6 @@
     background-color: white;
     transition-duration: 0.2s;
 }
-
 #mainmenu {
     position: fixed;
     width: 35px;
@@ -24,12 +21,10 @@
     right: 2.5%;
     background-color: rgba(0, 0, 0, 0.0);
 }
-
 #Search::placeholder {
     color: dimgrey;
     font-size: x-large;
 }
-
 #Search {
     font-size: x-large;
     color: white;
@@ -41,7 +36,6 @@
     height: 30px;
     width: 400px;
 }
-
 #allprddiv {
     background-color: rgb(37, 37, 37);
     position: absolute;
@@ -52,7 +46,6 @@
     border-width: 0;
     visibility: hidden;
 }
-
 #techchattag {
     left: 20px;
     position: relative;
@@ -61,7 +54,6 @@
     transition: 0.2s;
     visibility: hidden;
 }
-
 #gtracingtag,
 #videoclipapp,
 #Antivirussoftware,
@@ -76,20 +68,9 @@
     transition-duration: 0.2s;
     visibility: hidden;
 }
-
-#Antivirussoftware,
-#aibot {
-    left: 300px;
-}
-
-#aibot {
-    top: 0;
-}
-
-#videoclipapp {
-    top: 80px;
-}
-
+#Antivirussoftware,#aibot{left: 300px;}
+#aibot {top: 0;}
+#videoclipapp {top: 80px;}
 #TCIco {
     width: 40px;
     height: 40px;
@@ -101,7 +82,6 @@
     opacity: 0.0;
     transition-duration: 0.2s;
 }
-
 #bigTCIco {
     width: 200px;
     height: 200px;
@@ -109,37 +89,19 @@
     top: 120px;
     opacity: 0.0;
 }
-
 #bigTCIco,
 #techchattg {
     transition-duration: 0.3s;
 }
-
 #laptop {
     position: relative;
     top: -20px;
 }
-
-#Desktop {
-    top: 50px;
-}
-
-#Screen {
-    top: 100px;
-}
-
-#inputdevice {
-    top: 150px;
-}
-
-#allprddiv>h2 {
-    background-color: rgba(0, 0, 0, 0.0);
-}
-
-.tagdiv {
-    height: 100px;
-}
-
+#Desktop {top: 50px;}
+#Screen {top: 100px;}
+#inputdevice {top: 150px;}
+#allprddiv>h2 {background-color: rgba(0, 0, 0, 0.0);}
+.tagdiv {height: 100px;}
 #navbar {
     position: absolute;
     height: 100px;
@@ -147,7 +109,6 @@
     top: 0;
     left: 0;
 }
-
 #cellphoneNavBar {
     position: fixed;
     top: 0;
@@ -157,7 +118,6 @@
     visibility: hidden;
     transition-duration: 0.2s;
 }
-
 .cellphonetag {
     position: absolute;
     left: 0;
@@ -167,23 +127,10 @@
     transition-duration: 0.3s;
     visibility: hidden;
 }
-
-.cone {
-    top: 10%;
-}
-
-.ctwo {
-    top: 20%;
-}
-
-.cthree {
-    top: 30%;
-}
-
-.cfour {
-    top: 40%;
-}
-
+.cone {top: 10%;}
+.ctwo {top: 20%;}
+.cthree {top: 30%;}
+.cfour {top: 40%;}
 #shadow {
     position: fixed;
     visibility: hidden;
@@ -194,24 +141,19 @@
     top: 0;
     transition-duration: 0.2s;
 }
-
 @media screen and (max-width: 818px) {
-
     .tag,
     .tagdiv,
     #Search {
         visibility: hidden;
     }
 }
-
 @media screen and (min-width:819px) {
-
     #mainmenu,
     #cellphoneNavBar {
         visibility: hidden;
     }
 }
-
 @media screen and (max-width:1159px) {
     #Search {
         visibility: hidden;
