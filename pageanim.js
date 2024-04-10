@@ -26,7 +26,7 @@ mobilebl = false;
 prdpgbl = false;
 body.addEventListener('keydown', function (e) {
     if (e.key === "/") {
-        document.getElementById("Search").focus();
+        searchbar.focus();
         e.preventDefault();
     }
 });
