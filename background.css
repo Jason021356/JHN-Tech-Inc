@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 *{
-    background-color: black;
+background-color:black;
 }
 
 body{
-    overflow-x: hidden;
+overflow-x:hidden;
 }
 
 h1{
-    color: white;
+color:white;
 }

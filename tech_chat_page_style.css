@@ -32,6 +32,7 @@
     height: 30px;
     width: 400px;
     transition-duration: 0.3s;
+    visibility: hidden;
 }
 #Search::placeholder{
     color: dimgrey;
@@ -135,17 +136,12 @@
     transition-duration: 0.2s;
 }
 @media screen and (max-width: 818px){
-    .tag,.tagdiv,#Search{
+    .tag,.tagdiv{
         visibility: hidden;
     }
 }
 @media screen and (min-width:819px){
     #mainmenu,#cellphoneNavBar{
-        visibility: hidden;
-    }
-}
-@media screen and (max-width:1159px){ 
-    #Search{
         visibility: hidden;
     }
 }
