@@ -36,7 +36,7 @@
     height: 30px;
     width: 400px;
 }
-#allprddiv {
+#allprddiv{
     background-color: rgb(37, 37, 37);
     position: absolute;
     width: 100%;
@@ -46,7 +46,7 @@
     border-width: 0;
     visibility: hidden;
 }
-#techchattag {
+#techchattag{
     left: 20px;
     position: relative;
     height: 0;
@@ -54,14 +54,7 @@
     transition: 0.2s;
     visibility: hidden;
 }
-#gtracingtag,
-#videoclipapp,
-#Antivirussoftware,
-#aibot,
-#laptop,
-#Desktop,
-#Screen,
-#inputdevice {
+#gtracingtag,#videoclipapp,#Antivirussoftware,#aibot,#laptop,#Desktop,#Screen,#inputdevice{
     position: absolute;
     left: 20px;
     color: rgba(0, 0, 0, 0.0);
@@ -69,9 +62,9 @@
     visibility: hidden;
 }
 #Antivirussoftware,#aibot{left: 300px;}
-#aibot {top: 0;}
-#videoclipapp {top: 80px;}
-#TCIco {
+#aibot{top: 0;}
+#videoclipapp{top: 80px;}
+#TCIco{
     width: 40px;
     height: 40px;
     position: absolute;
@@ -82,34 +75,33 @@
     opacity: 0.0;
     transition-duration: 0.2s;
 }
-#bigTCIco {
+#bigTCIco{
     width: 200px;
     height: 200px;
     position: absolute;
     top: 120px;
     opacity: 0.0;
 }
-#bigTCIco,
-#techchattg {
+#bigTCIco,#techchattg{
     transition-duration: 0.3s;
 }
-#laptop {
+#laptop{
     position: relative;
     top: -20px;
 }
-#Desktop {top: 50px;}
-#Screen {top: 100px;}
-#inputdevice {top: 150px;}
-#allprddiv>h2 {background-color: rgba(0, 0, 0, 0.0);}
-.tagdiv {height: 100px;}
-#navbar {
+#Desktop{top: 50px;}
+#Screen{top: 100px;}
+#inputdevice{top: 150px;}
+#allprddiv>h2{background-color: rgba(0, 0, 0, 0.0);}
+.tagdiv{height: 100px;}
+#navbar{
     position: absolute;
     height: 100px;
     width: 100%;
     top: 0;
     left: 0;
 }
-#cellphoneNavBar {
+#cellphoneNavBar{
     position: fixed;
     top: 0;
     left: 0;
@@ -118,7 +110,7 @@
     visibility: hidden;
     transition-duration: 0.2s;
 }
-.cellphonetag {
+.cellphonetag{
     position: absolute;
     left: 0;
     color: rgba(0, 0, 0, 0.0);
@@ -127,11 +119,11 @@
     transition-duration: 0.3s;
     visibility: hidden;
 }
-.cone {top: 10%;}
-.ctwo {top: 20%;}
-.cthree {top: 30%;}
-.cfour {top: 40%;}
-#shadow {
+.cone{top: 10%;}
+.ctwo{top: 20%;}
+.cthree{top: 30%;}
+.cfour{top: 40%;}
+#shadow{
     position: fixed;
     visibility: hidden;
     background-color: rgba(0, 0, 0, 0.0);
@@ -141,21 +133,18 @@
     top: 0;
     transition-duration: 0.2s;
 }
-@media screen and (max-width: 818px) {
-    .tag,
-    .tagdiv,
-    #Search {
+@media screen and (max-width: 818px){
+    .tag,.tagdiv,#Search{
         visibility: hidden;
     }
 }
-@media screen and (min-width:819px) {
-    #mainmenu,
-    #cellphoneNavBar {
+@media screen and (min-width:819px){
+    #mainmenu,#cellphoneNavBar{
         visibility: hidden;
     }
 }
-@media screen and (max-width:1159px) {
-    #Search {
+@media screen and (max-width:1159px){ 
+    #Search{
         visibility: hidden;
     }
 }
