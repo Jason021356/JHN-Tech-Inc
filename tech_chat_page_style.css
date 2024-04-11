@@ -21,10 +21,6 @@
     right: 2.5%;
     background-color: rgba(0, 0, 0, 0.0);
 }
-#Search::placeholder{
-    color: dimgrey;
-    font-size: x-large;
-}
 #Search{
     font-size: x-large;
     color: white;
@@ -35,6 +31,11 @@
     left: 750px;
     height: 30px;
     width: 400px;
+    transition-duration: 0.3s;
+}
+#Search::placeholder{
+    color: dimgrey;
+    font-size: x-large;
 }
 #allprddiv{
     background-color: rgb(37, 37, 37);
