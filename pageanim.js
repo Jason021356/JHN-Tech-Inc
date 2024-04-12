@@ -84,7 +84,7 @@ function Devicealldivanimstyle() {
         ctwoto = setTimeout(() => ctwo.style = "color:white;visibility:unset;left:20%;", 250);
         cthreeto = setTimeout(() => cthree.style = "color:white;visibility:unset;left:20%;", 300);
         cfourto = setTimeout(() => cfour.style = "color:white;visibility:unset;left:20%;", 350);
-        mosearchbarto = setTimeout(() => mosearchbar.style = "visibility:unset;border-color:dimgrey;")
+        mosearchbarto = setTimeout(() => mosearchbar.style = "visibility:unset;border-color:dimgrey;", 400);
         mobilebl = true;
     } else {
         clearTimeoutfn(coneto, ctwoto, cthreeto, cfourto);
