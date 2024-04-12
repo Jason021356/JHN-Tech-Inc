@@ -21,6 +21,7 @@ cthree = document.querySelector(".cthree");
 cfour = document.querySelector(".cfour");
 searchbar = document.getElementById("Search");
 shadow = document.getElementById("shadow");
+mosearchbar = document.getElementById("moSearch");
 apppgcnt = 0;
 mobilebl = false;
 prdpgbl = false;
@@ -83,7 +84,7 @@ function Devicealldivanimstyle() {
         ctwoto = setTimeout(() => ctwo.style = "color:white;visibility:unset;left:20%;", 250);
         cthreeto = setTimeout(() => cthree.style = "color:white;visibility:unset;left:20%;", 300);
         cfourto = setTimeout(() => cfour.style = "color:white;visibility:unset;left:20%;", 350);
-        searchbar = setTimeout(() => searchbar.style = "")
+        mosearchbarto = setTimeout(() => mosearchbar.style = "visibility:unset;border-color:dimgrey;")
         mobilebl = true;
     } else {
         clearTimeoutfn(coneto, ctwoto, cthreeto, cfourto);

@@ -28,7 +28,7 @@
 #Search {
     font-size: x-large;
     color: white;
-    border: 3px dimgrey solid;
+    border: 3px rgba(0, 0, 0, 0.0) solid;
     border-radius: 10px;
     position: fixed;
     top: 35px;
@@ -42,6 +42,18 @@
 #Search::placeholder {
     color: dimgrey;
     font-size: x-large;
+}
+
+#moSearch {
+    font-size: large;
+    color: white;
+    border: 3px rgba(0, 0, 0, 0.0) solid;
+    border-radius: 10px;
+    left: 0;
+    height: 30px;
+    width: 400px;
+    transition-duration: 0.3s;
+    visibility: hidden;
 }
 
 #allprddiv {
